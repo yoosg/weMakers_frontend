@@ -1,0 +1,35 @@
+.detail {
+  padding: 45px 10px 45px;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.11px;
+  text-align: center;
+
+  em {
+    font-style: normal;
+    display: block;
+  }
+  .period {
+    padding-top: 16px;
+  }
+}
+
+.openmark {
+  margin-bottom: 16px;
+  background-image: url("../../../asset/icon/ico_product_v2_320.png");
+  background-position: 0 -20px;
+  display: block;
+  width: 13px;
+  height: 10px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+.closemark {
+  background-image: url("../../../asset/icon/ico_product_v2_320.png");
+  background-position: 0 -30px;
+  display: block;
+  width: 13px;
+  height: 10px;
+  margin: 0 auto;
+  margin-top: 18px;
+}
