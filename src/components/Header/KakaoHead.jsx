@@ -1,14 +1,14 @@
 import React from "react";
 import sty from "./KakaoHead.module.scss";
 
-export default function KakaoHead() {
+export default function KakaoHead({ switchToggle }) {
   return (
     <header className={sty.kakaoHead}>
       <div className={sty.wrapper}>
-        <a href="/" className={sty.menuWrapper}>
+        <div className={sty.menuWrapper} onClick={switchToggle}>
           <span className={sty.menuIcon}></span>
-        </a>
-        <a href="/" className={sty.logo}></a>
+        </div>
+        <span className={sty.logo}></span>
         <div className={sty.searchWrapper}>
           <span className={sty.searchIcon}></span>
         </div>

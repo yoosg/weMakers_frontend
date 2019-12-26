@@ -1,15 +1,13 @@
-import React from "react";
+import React, { memo } from "react";
 import sty from "./Header.module.scss";
 import KaKaoHead from "./KakaoHead";
 import GlobalNavBar from "./NavBar";
 
-function Header() {
+export default memo(function Header({ switchToggle }) {
   return (
     <div className={sty.Header}>
-      <KaKaoHead />
+      <KaKaoHead switchToggle={switchToggle} />
       <GlobalNavBar />
     </div>
   );
-}
-
-export default Header;
+});
