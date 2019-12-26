@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+}
+.menuWrapper {
+  display: inline-block;
+  width: 43px;
+  height: 100%;
+}
+.menuIcon {
+  display: inline-block;
+  text-align: center;
+  margin: 21px 8px 16px 16px;
+  width: 20px;
+  height: 16px;
+  background-image: url("../../assets/icon/ico_makers_v2_320.png");
+  background-repeat: no-repeat no-repeat;
+  background-position-x: -100px;
+  background-position-y: -21px;
+}
+.logo {
+  display: inline-block;
+  width: 128px;
+  height: 20px;
+  margin: auto 0px auto 4px;
+  background-image: url("../../assets/1_kakaomakers@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position-x: 0px;
+}
+.searchWrapper {
+  width: 52px;
+}
+.searchIcon {
+  display: inline-block;
+  text-align: center;
+  margin: 18px 8px 14px;
+  width: 18px;
+  height: 20px;
+  background-image: url("../../assets/icon/ico_makers_v2_320.png");
+  background-repeat: no-repeat no-repeat;
+  background-position-x: -120px;
+  background-position-y: -20px;
+}

@@ -1,0 +1,35 @@
+.tab {
+  height: 40px;
+  list-style: none;
+  border-bottom: 1px solid #fefefe;
+  font-size: 17px;
+}
+
+.tabNameWrapper {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px 2px 6px;
+}
+.tabNameBorder {
+  border-bottom: 5px solid #212121;
+}
+.tabName {
+  position: relative;
+}
+.tabDot {
+  position: absolute;
+  right: -15%;
+  top: -15%;
+  display: inline-block;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #db635d;
+  :hover {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+  }
+}
