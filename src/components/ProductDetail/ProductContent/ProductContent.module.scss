@@ -1,0 +1,117 @@
+.tit_box {
+  display: block;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.tit_name {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+}
+.tit_price {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  /* padding: 10px 0; */
+}
+.order_count_box {
+  padding: 20px 12px 0;
+}
+.count_info {
+  border-bottom: 1px solid #f1f1f1;
+}
+.order_set {
+  font-size: 20px;
+  display: inline-block;
+  font-weight: lighter;
+}
+
+/* graph */
+
+.order_graph {
+  padding: 10px 0 17px;
+}
+.order_text {
+  display: block;
+  font-weight: bold;
+}
+.graph {
+  position: relative;
+  height: 5px;
+  margin: 21px 0 33px;
+  background-color: #dedede;
+}
+.sell_line {
+  width: 34%;
+  height: 5px;
+  background-color: #db635d;
+}
+.max_point {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  margin-left: -29px;
+  text-align: right;
+  color: #808080;
+  line-height: 4px;
+}
+.max {
+  background-color: #848484;
+  display: inline-block;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  font-size: 1px;
+  margin-bottom: 5px;
+  margin-right: -3px;
+}
+.count {
+  display: block;
+  font-size: 11px;
+}
+.min_point {
+  position: absolute;
+  top: -4px;
+  width: 32px;
+  margin-left: -22px;
+  text-align: center;
+  color: #e05555;
+  left: 17%;
+  line-height: 7px;
+}
+.min {
+  background-color: #e05555;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border: 3px solid #fff;
+  font-size: 1px;
+  border-radius: 50%;
+  margin-bottom: 3px;
+  margin-right: -3px;
+  vertical-align: top;
+}
+.div {
+  display: block;
+}
+.order_count {
+  color: #8e8e8e;
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+.min_color,
+.max_color {
+  background-color: #db635d;
+  width: 7px;
+  height: 7px;
+  margin: 2px 8px 0 0;
+  border-radius: 50%;
+  display: inline-block;
+}
+.max_color {
+  background-color: #848484;
+}
+p {
+  display: block;
+}
