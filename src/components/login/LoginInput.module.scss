@@ -1,0 +1,76 @@
+
+.helpboxContent {
+  font-size: 13px;
+  padding: 10px;
+}
+.helpboxContent2 {
+  margin: auto auto 10px 10px;
+}
+
+.helpboxUrl {
+  color: yellow;
+}
+
+.inputBox {
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  width: 100%;
+}
+
+.kakaoAcount {
+  position: relative;
+}
+.question {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+.emailButton {
+  background-color: transparent;
+  border: 0 none;
+  cursor: pointer;
+  height: 15px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: 0 -140px;
+  background-image: url('../../store/imgSprite_Login.png');
+}
+.emailTooltip {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 275px;
+  height: 75px;
+  background: black;
+  color: white;
+  opacity: 0.8;
+  border-radius: 3px;
+  z-index: 3;
+  position: absolute
+}
+/*버튼*/
+.divPassword .inputPassword {
+  //z-index: -1;
+  position: relative;
+}
+
+.twoInput {
+  position: relative;
+  padding: 11px 70px 11px 0;
+  border-bottom: solid #e5e5e5 1.5px;
+  font-size: 15px;
+  input:focus {
+    outline: none;
+  }
+  cursor: pointer;
+}
