@@ -6,7 +6,7 @@ import "./ProductInformation.scss";
 export default class ProductInformation extends Component {
   render() {
     return (
-      <div className='main_container'>
+      <div className='mainContainer'>
         <Header />
         <ProductArticle />
         <ProductOrder />

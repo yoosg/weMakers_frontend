@@ -1,20 +1,26 @@
-.tit_box {
+.Article {
+  width: 100%;
+  div:focus {
+    outline: none;
+  }
+}
+.titBox {
   display: block;
   padding: 18px 12px 10px;
   border-bottom: 1px solid #e6e6e6;
   position: relative;
 }
-.tit_name {
+.titName {
   display: block;
   font-size: 14px;
   font-weight: normal;
 }
-.tit_price {
+.titPrice {
   display: block;
   font-weight: bold;
   font-size: 14px;
 }
-.link_btn {
+.linkBtn {
   position: absolute;
   display: block;
   top: 15px;
@@ -24,8 +30,8 @@
   border: 1px solid #e8e8e8;
   border-radius: 20px;
 }
-.link_img {
-  background-image: url("../../../asset/icon/ico_product_v2_320.png");
+.linkImg {
+  background-image: url("../../../assets/icon/ico_product_v2_320.png");
   background-repeat: no-repeat no-repeat;
   background-position: 0 0;
   display: inline-block;
@@ -33,22 +39,22 @@
   height: 18px;
   margin: 11px 0 0 10px;
 }
-.content_line {
+.contentLine {
   height: 12px;
   background-color: #ededed;
 }
-.shipping_info {
+.shippingInfo {
   padding: 21px 12px 18px;
 }
-.shipping_title {
+.shippingTitle {
   font-size: 18px;
   font-weight: bold;
 }
-.shipping_text {
+.shippingText {
   padding-top: 5px;
   font-size: 14px;
 }
-.shipping_text_detail {
+.shippingTextDetail {
   font-weight: bold;
   font-style: normal;
   color: #db635d;
@@ -62,79 +68,18 @@
   letter-spacing: -0.35px;
   line-height: 44px;
 }
-
 ul {
   display: block;
   list-style: none;
 }
-.li {
-  list-style: none;
-  width: 33.333%;
-  float: left;
-  height: 48px;
-  line-height: 44px;
-  text-align: center;
-}
-.information_list {
+.informationList {
   border-bottom: 1px solid #f0f0f0;
   height: 48px;
-}
-.productinfo {
-  display: block;
-  height: 100%;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: -0.35px;
-  cursor: pointer;
-}
-.infoblock {
-  display: none;
-  height: 100%;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: -0.35px;
-  cursor: pointer;
-}
-.hidden {
-  display: none;
-}
-.information_txt {
-  display: inline-block;
-  position: relative;
-  height: 100%;
-  padding-top: 4px;
-  font-weight: bold;
-  font-size: 15px;
-}
-.txt_count {
-  font-weight: normal;
-  font-size: 10px;
-  letter-spacing: -0.35px;
-}
-.maincontent {
-  display: block;
-  height: 300px;
-  border-bottom: 12px solid #ededed;
-  clear: both;
-  content: "";
-}
-.basiccontent {
-  display: block;
-  border-bottom: 12px solid #ededed;
-  margin-bottom: 100px;
+  padding: 0;
+  margin: 0;
 }
 .inquiry {
   display: block;
   border-bottom: 12px solid #ededed;
   margin-bottom: 100px;
 }
-/* 
-.foo {
-  padding: 0;
-  transition: 0.5s;
-}
-
-.foo.bar {
-  padding: 20px;
-}
- */

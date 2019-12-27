@@ -1,0 +1,85 @@
+.channelBox {
+  overflow: hidden;
+  padding: 22px 13px;
+  margin: 0;
+}
+.channelBtnBox {
+  text-align: left;
+  margin-top: 16px;
+  background-color: #fed800;
+  border: 1px solid #fed800;
+  padding: 9px 15px 7px;
+
+  max-width: none;
+  border-radius: 18px;
+  box-sizing: border-box;
+  padding-left: 28px;
+  position: relative;
+  display: inline-block;
+  color: #212121;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+.channelBtnTxt {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: -1px 5px 0 0;
+  background-image: url("../../../assets/icon/ico_product_v2_320.png");
+  background-position: -60px 0;
+  position: absolute;
+  left: 5px;
+}
+.adviceBox {
+  overflow: hidden;
+  padding: 22px 13px;
+  margin: 0;
+}
+.adviceTitle {
+  padding-bottom: 8px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4a4a4a;
+}
+.adviceContent {
+  padding-bottom: 0;
+  line-height: 20px;
+  font-size: 12px;
+}
+.period {
+  color: #9b9b9b;
+  margin-top: 4px;
+  padding-bottom: 0;
+  line-height: 20px;
+  font-size: 12px;
+}
+.adviceBtnBox {
+  text-align: left;
+  margin-top: 16px;
+  position: relative;
+}
+.adviceBtnBox {
+  background-color: #fed800;
+  border: 1px solid #fed800;
+  padding: 9px 15px 7px;
+  max-width: none;
+  border-radius: 18px;
+  box-sizing: border-box;
+  padding-left: 28px;
+  display: inline-block;
+  color: #212121;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+.adviceBtnTxt {
+  display: inline-block;
+  background-image: url("../../../assets/icon/ico_makers_v2_320.png");
+  background-position: 0 -110px;
+  position: absolute;
+  left: 8px;
+  background-repeat: no-repeat no-repeat;
+  width: 20px;
+  height: 18px;
+}

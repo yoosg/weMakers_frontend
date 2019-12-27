@@ -1,12 +1,26 @@
 import React, { Component } from "react";
+import BasicInfo from "./BasicInfo";
+import Reference from "./Reference";
+import basicData from "./BasicInformationData";
 import sty from "./BasicInformation.module.scss";
 export default class BasicInformation extends Component {
   render() {
+    const { basicInfo, reference } = basicData;
+    console.log(basicInfo);
+    const list = basicInfo.map((info, index) => (
+      <BasicInfo key={index} info={info} />
+    ));
     return (
-      <dl>
-        <dt>품명 및 모델명</dt>
-        <dd>153 ID 스페셜 에디션 키워드 펜</dd>
-      </dl>
+      <div>
+        <div className={sty.infoList}>{list}</div>
+        <div className={sty.referenceList}>
+          <ul>
+            {reference.map((refData, index) => (
+              <Reference key={index} data={refData} />
+            ))}
+          </ul>
+        </div>
+      </div>
     );
   }
 }

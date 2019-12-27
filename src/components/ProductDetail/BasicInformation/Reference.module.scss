@@ -1,0 +1,33 @@
+.referenceBox {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.referenceTitle {
+  display: block;
+  overflow: hidden;
+  height: 49px;
+  padding-left: 5px;
+  border-bottom: 1px solid #1a1a1a;
+  line-height: 51px;
+  strong {
+    float: left;
+    font-size: 14px;
+  }
+}
+.noticeOpen {
+  overflow: hidden;
+  float: right;
+  width: 17px;
+  height: 10px;
+  margin: 20px 20px 0 0;
+  background-image: url("../../../assets/icon/ico_product_v2_320.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: -40px -20px;
+}
+.noticeClose {
+  background-position: -40px -30px;
+}
+.notice {
+  padding: 14px 13px 19px 0;
+}

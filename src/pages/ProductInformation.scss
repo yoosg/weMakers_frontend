@@ -2,8 +2,11 @@ body {
   max-width: 640px;
   margin: 0 auto;
 }
-.main_container {
+.mainContainer {
   min-width: 320px;
+  max-width: 640px;
+  background: #fff;
+
   padding-top: 55px;
   border: 1px solid lightseagreen;
 }

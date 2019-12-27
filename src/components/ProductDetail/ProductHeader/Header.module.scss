@@ -1,4 +1,4 @@
-.product_head {
+.productHead {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,63 +11,64 @@
   background-color: #fafafa;
   z-index: 1;
 }
-.title_box {
+.titleBox {
   text-align: center;
+  margin: 0;
 }
-.header_title {
+.headerTitle {
   height: 55px;
   line-height: 55px;
   font-weight: bold;
   font-size: 15px;
 }
-.left_tool_box {
+.leftToolBox {
   position: absolute;
   left: 0;
   top: 0;
 }
-.right_tool_box {
+.rightToolBox {
   position: absolute;
   right: 10px;
   top: 15px;
 }
-.back_btn {
+.backBtn {
   display: block;
   float: left;
   width: 42px;
   height: 55px;
 }
-.back_img {
+.backImg {
   display: block;
-  background-image: url("../../../asset/icon/ico_makers_v2_320.png");
+  background-image: url("../../../assets/icon/ico_makers_v2_320.png");
   background-position: -120px 0;
   margin: 17px auto 0;
   width: 18px;
   height: 18px;
 }
-.home_btn {
+.homeBtn {
   display: block;
   float: left;
   width: 42px;
   height: 55px;
 }
-.home_img {
+.homeImg {
   display: block;
-  background-image: url("../../../asset/icon/ico_makers_v2_320.png");
+  background-image: url("../../../assets/icon/ico_makers_v2_320.png");
   background-position: -100px 0;
   width: 18px;
   height: 20px;
   margin: 15px auto 0;
 }
-.search_btn {
+.searchBtn {
   display: block;
   height: 55px;
   position: relative;
   top: 2px;
   left: 3px;
 }
-.search_img {
+.searchImg {
   display: block;
-  background-image: url("../../../asset/icon/ico_makers_v2_320.png");
+  background-image: url("../../../assets/icon/ico_makers_v2_320.png");
   background-position: -120px -20px;
   width: 18px;
   height: 18px;
