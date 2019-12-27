@@ -1,0 +1,13 @@
+.slide {
+  ul {
+    position: absolute;
+    bottom: 25px;
+    li {
+      position: relative;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+    }
+  }
+}
