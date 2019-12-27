@@ -1,0 +1,90 @@
+.sideDrawer {
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 69%;
+  max-width: 400px;
+  overflow-y: auto;
+
+  background-color: #ffffff;
+  transform: translateX(-100%);
+  transition: transform 0.18s ease-in-out;
+  &.open {
+    transform: translateX(0);
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.sideWrapper {
+  padding: 16px 0 60px 20px;
+}
+
+.rowMenu {
+  margin-top: 17px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.rowLink {
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  list-style: none;
+}
+.row {
+  padding-top: 20px;
+}
+.downApp {
+  margin-left: -2px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 16px 14px;
+  color: #fafafa;
+  background-color: #212121;
+}
+.downAppTitle {
+  position: relative;
+  text-align: center;
+  padding-top: 1px;
+  padding-left: 20px;
+  font-size: 14px;
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    display: inline-block;
+    width: 18px;
+    height: 19px;
+    background-image: url(../../assets/makers_app_download.png);
+    background-size: 18px 19px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+.logOut {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.logOutTitle {
+  box-sizing: border-box;
+  height: 45px;
+  padding: 12px 0;
+  text-align: center;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 14px;
+}
+.sideBackDrop {
+  z-index: 1900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 200%;
+  background-color: rgba(0, 0, 0, 0.3);
+}

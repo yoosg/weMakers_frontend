@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./common/reset.scss";
 import sty from "./App.module.scss";
 import Header from "./components/Header/Header";
-import SideDrawer from "./components/SideDrawer/SideDrawer";
+import SideDrawer from "./pages/SideDrawer";
 
 export default class App extends Component {
   state = {
