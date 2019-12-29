@@ -18,7 +18,6 @@ export default class LoginSet extends Component {
 
   render() {
     return (
-      <>
         <div className={sty.setLogin}>
           <label className={sty.labelcheck}>
             <input
@@ -48,7 +47,6 @@ export default class LoginSet extends Component {
             </div>
           </label>
         </div>
-      </>
     );
   }
 }

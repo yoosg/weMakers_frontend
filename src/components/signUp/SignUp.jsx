@@ -6,7 +6,6 @@ import LoginFooter from '../loginFooter/LoginFooter';
 export default class SignUp extends Component {
   render() {
     return (
-      <>
         <div className={sty.container}>
           <div className={sty.kakao}></div>
           <div className={sty.kakaoWrap}>
@@ -27,7 +26,6 @@ export default class SignUp extends Component {
                      <button
                       className={sty.emailButton}
                       type="button"
-                      //onClick={this.clickHelp}
                     ></button>
                   </label>
                 </div>
@@ -79,9 +77,8 @@ export default class SignUp extends Component {
               </div>
             </div>
           </div>
+          <LoginFooter/>
         </div>
-      <LoginFooter/>
-      </>
     );
   }
 }

@@ -8,12 +8,11 @@
 }
 .checked {
   background-position: 0 -30px;
-} //상속돼서 밑에 써줘야한다. sass는 가능
+}
 
 .checkLogin {
   font-size: 14px;
   letter-spacing: -0.03em;
-  //margin: 0 auto 15px 7px;
 }
 .setLogin {
   margin: 25px auto 25px auto;

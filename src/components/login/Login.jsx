@@ -34,13 +34,12 @@ class Login extends Component {
   }
 
   closeHelpTooltip(e) {
-    if ( e.target.name !== 'tooltip') {
-
+    if (e.target.name !== 'tooltip') {
       this.setState({
-        isHelpTooltipOn: false
+        isHelpTooltipOn: false,
       });
     }
-    }
+  }
 
   checkValidation() {
     if (
@@ -53,18 +52,11 @@ class Login extends Component {
         this.state.password
       )
     ) {
-      this.setState({
-        isValidate: true,
-      });
+      this.setState({ isValidate: true });
     } else {
-      this.setState(
-        {
-          isValidate: false,
-        },
-        () => {
-          this.sendLoginData();
-        }
-      );
+      this.setState({ isValidate: false }, () => {
+        this.sendLoginData();
+      });
     }
   }
   //서버 api
@@ -85,31 +77,29 @@ class Login extends Component {
 
   render() {
     return (
-      <>
-        <div className={sty.kakaoWrap} onClick={this.closeHelpTooltip}>
-          <div className={sty.container}>
-            <h1>
-              <span className={sty.kakao}></span>
-            </h1>
-            <div className={sty.loginForm}>
-              <fieldset className={sty.fieldset}>
-                <LoginInput
-                  email={this.state.email}
-                  password={this.state.password}
-                  isHelpTooltipOn={this.state.isHelpTooltipOn}
-                  handleChange={this.handleChange}
-                  clickHelp={this.clickHelp}
-                />
-                <LoginSet />
-                {this.state.isValidate && (<LoginValidation/>)}
-                <LoginButton checkValidation={this.checkValidation}/>
-              </fieldset>
-            </div>
-            <LoginBelowButtons />
+      <div className={sty.kakaoWrap} onClick={this.closeHelpTooltip}>
+        <div className={sty.container}>
+          <h1>
+            <span className={sty.kakao}></span>
+          </h1>
+          <div className={sty.loginForm}>
+            <fieldset className={sty.fieldset}>
+              <LoginInput
+                email={this.state.email}
+                password={this.state.password}
+                isHelpTooltipOn={this.state.isHelpTooltipOn}
+                handleChange={this.handleChange}
+                clickHelp={this.clickHelp}
+              />
+              <LoginSet />
+              {this.state.isValidate && <LoginValidation />}
+              <LoginButton checkValidation={this.checkValidation} />
+            </fieldset>
           </div>
-          <LoginFooter />
+          <LoginBelowButtons />
         </div>
-      </>
+        <LoginFooter />
+      </div>
     );
   }
 }
