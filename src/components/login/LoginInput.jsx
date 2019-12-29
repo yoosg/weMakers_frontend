@@ -5,32 +5,10 @@ import ReactTooltip from 'react-tooltip';
 export default class LoginInput extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isHelpTooltipOn: false, //저함수 원래값을 false로 해놓음
-      email: '',
-      password: '',
-    };
-    this.clickHelp = this.clickHelp.bind(this); //바인딩 왜해야하냐면 구글에 쳐봐
-    this.closeHelpTooltip = this.closeHelpTooltip.bind(this); //함수마다 해줘야됨
-    //this.sendLoginData = this.sendLoginData.bind(this); // 이건 데이터 fetch로 보내는거
   }
-  handleChange = e => {
-    console.log(e.target.name);
-    this.setState({ [e.target.name]: e.target.value });
-    console.log('sdf', e.target.name[1], 'q', e.target.name[2], e.target.value);
-  };
-  clickHelp() {
-    this.setState({
-      isHelpTooltipOn: !this.state.isHelpTooltipOn,
-    });
-  }
-  //이 함수 만들어서 만약 state값이 있으면 셋스테이트메소드로 스테이트값바꾼다
-  closeHelpTooltip() {
-    if (this.state.isHelpTooltipOn) {
-      this.setState({ isHelpTooltipOn: false });
-    }
-  }
+
   render() {
+    console.log(this.props,'ff') //프롭스는 부모의 스테이트를 화면에 뿌려줄때,부모 스테이트 함수가져올때
     return (
       <>
         <div className={`${sty.kakaoAcount} ${sty.twoInput}`}>
@@ -38,17 +16,18 @@ export default class LoginInput extends Component {
             className={`${sty.inputEmail} ${sty.inputBox}`}
             type="text"
             name="email"
-            value={this.state.name}
-            onChange={this.handleChange}
-            placeholder="카카오계정 (이메일 또는 전화번호)"
+            value={this.props.email}
+            onChange={this.props.handleChange}
+            placeholder="이메일"
           />
           <div className={sty.question}>
             <button
               className={sty.emailButton}
               type="button"
-              onClick={this.clickHelp}
+              name="tooltip"
+              onClick={this.props.clickHelp}
             ></button>
-            {this.state.isHelpTooltipOn && (
+            {this.props.isHelpTooltipOn && (
               <div className={sty.emailTooltip}>
                 <p className={sty.helpboxContent}>
                   카카오계정은 카카오 서비스 및 연계 서비스를 이용하기 위하여
@@ -69,10 +48,10 @@ export default class LoginInput extends Component {
         <div className={`${sty.divPassword} ${sty.twoInput}`}>
           <input
             className={`${sty.inputPassword} ${sty.inputBox}`}
-            type="text"
+            type="password"
             name="password"
-            value={this.state.password}
-            onChange={this.handleChange}
+            value={this.props.password}
+            onChange={this.props.handleChange}
             placeholder="비밀번호"
           ></input>
         </div>

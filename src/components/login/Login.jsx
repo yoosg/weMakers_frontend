@@ -16,29 +16,71 @@ class Login extends Component {
       password: '',
       isValidate: false,
     };
+    this.clickHelp = this.clickHelp.bind(this);
+    this.closeHelpTooltip = this.closeHelpTooltip.bind(this); //함수마다 해줘야됨
+    this.checkValidation = this.checkValidation.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange = e => {
+    //console.log(e.target.name.password);
+    this.setState({ [e.target.name]: e.target.value });
+    //console.log('1', e.target.name, '2', e.target.name.email, e.target.value);
+  };
+
+  clickHelp() {
+    this.setState({
+      isHelpTooltipOn: !this.state.isHelpTooltipOn,
+    });
   }
 
-  sendLoginData = e => {
-    e.preventDefault();
-    console.log('test');
-    console.log(e.target.name);
-    console.log(e.target.value);
-    console.log(e.target);
-    //if(isValidate가 맞으면 박스없이 로그인 서버와 연결해줘야됨)
-    // 만약 이메일형식이
-    //   fetch('',{
-    //     method: 'GET',
-    //     body: JSON.stringify({
-    //     email: this.state.email,
-    //     password: this.state.password
-    //   }),
-    // })
-    // .then(res => res.json())
-    //   .then(res => {
-    //     alert(res.access_token);
+  closeHelpTooltip(e) {
+    if ( e.target.name !== 'tooltip') {
 
-    //     localStorage.setItem('auth_token', res.access_token);
-    //   });
+      this.setState({
+        isHelpTooltipOn: false
+      });
+    }
+    }
+
+  checkValidation() {
+    if (
+      this.state.email === '' ||
+      !/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i.test(
+        this.state.email
+      ) ||
+      this.state.password === '' ||
+      !/^.*(?=^.{8,32}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/.test(
+        this.state.password
+      )
+    ) {
+      this.setState({
+        isValidate: true,
+      });
+    } else {
+      this.setState(
+        {
+          isValidate: false,
+        },
+        () => {
+          this.sendLoginData();
+        }
+      );
+    }
+  }
+  //서버 api
+  sendLoginData = () => {
+    fetch('', {
+      method: 'GET',
+      body: JSON.stringify({
+        email: this.state.email,
+        password: this.state.password,
+      }),
+    })
+      .then(res => res.json())
+      .then(res => {
+        alert(res.access_token);
+        localStorage.setItem('auth_token', res.access_token);
+      });
   };
 
   render() {
@@ -49,14 +91,20 @@ class Login extends Component {
             <h1>
               <span className={sty.kakao}></span>
             </h1>
-            <form className={sty.loginForm} onSubmit={this.sendLoginData}>
+            <div className={sty.loginForm}>
               <fieldset className={sty.fieldset}>
-                <LoginInput />
+                <LoginInput
+                  email={this.state.email}
+                  password={this.state.password}
+                  isHelpTooltipOn={this.state.isHelpTooltipOn}
+                  handleChange={this.handleChange}
+                  clickHelp={this.clickHelp}
+                />
                 <LoginSet />
-                {this.state.isValidate ? <LoginValidation /> : null}
-                <LoginButton />
+                {this.state.isValidate && (<LoginValidation/>)}
+                <LoginButton checkValidation={this.checkValidation}/>
               </fieldset>
-            </form>
+            </div>
             <LoginBelowButtons />
           </div>
           <LoginFooter />
