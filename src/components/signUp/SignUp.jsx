@@ -160,7 +160,7 @@ export default class SignUp extends Component {
     })
       .then(res => res.json())
       .then(res => {
-        alert('sucsess');
+        alert('success');
       });
   }
   render() {
