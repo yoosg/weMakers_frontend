@@ -147,7 +147,7 @@ export default class SignUp extends Component {
   postSignup() {
     console.log('asd');
     // 전부통과시 서버로 전송할 데이터 (fetch)
-    fetch('', {
+    fetch('http://10.58.7.106:8000/user', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -160,8 +160,7 @@ export default class SignUp extends Component {
     })
       .then(res => res.json())
       .then(res => {
-        alert(res.access_token);
-        localStorage.setItem('auth_token', res.access_token);
+        alert('sucsess');
       });
   }
   render() {
