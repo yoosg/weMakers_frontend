@@ -1,0 +1,105 @@
+//인풋 공통
+.inputs {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 48px;
+  border-width: 0 0 2px 0;
+  border-color: #ebebeb;
+  border-radius: 0;
+  outline: 0;
+  border: none;
+  position: relative;
+  border-bottom: solid #e5e5e5 1.5px;
+  font-size: 15px;
+  input:focus {
+    outline: none;
+  }
+  cursor: pointer;
+}
+//이메일 버튼
+.emailButton {
+  display: inline-block;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  background-position: -120px -30px;
+  background-size: 200px 220px;
+  background-image: url('../../assets/icon/ico_account_320.png');
+  outline: none;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  border: none;
+  cursor: pointer;
+}
+.passwordInputWrap {
+  position: relative;
+}
+.passwordAgainInputWrap {
+  position: relative;
+}
+.nicknameInputWrap {
+  position: relative;
+}
+
+.emailInputWrap {
+  position: relative;
+}
+//
+.info {
+  font-size: 24px;
+  margin: 25px;
+}
+.kakaoContent {
+  position: relative;
+  max-width: 580px;
+  min-height: 520px;
+  margin: 40px auto 20px;
+  padding: 58px 69px 139px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+//카카오 로고
+.kakao {
+  margin: 40px auto auto auto;
+  margin-bottom: 30px;
+  font-size: 32px;
+  display: block;
+  width: 88px;
+  height: 28px;
+  font-family: sans-serif;
+  background-image: url('../../assets/icon/ico_account_320.png');
+  background-repeat: no-repeat no-repeat;
+  background-position-x: 0px;
+}
+.nextButton {
+  background-color: #ffe500;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  margin-top: 60px;
+}
+.header {
+  display: block;
+  margin-top: 40px;
+  font-weight: normal;
+  font-size: 12px;
+  color: #000;
+}
+//올바르지 않습니다 박스
+.validationBox {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 13px;
+  background-color: #fafafa;
+}
+.validationPBox {
+  color: #e65f32;
+}
+
+
