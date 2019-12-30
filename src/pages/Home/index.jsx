@@ -4,6 +4,7 @@ import HomeTag from "../../components/HomeTag";
 import ProdCard1 from "../../components/HomeProdCard1";
 import ProdCard2 from "../../components/HomeProdCard2";
 import { fetchAPI } from "../../utils/fetchAPI";
+
 const mdSelectList = ["베스트", "연말선물", "살림고수템"];
 
 export default class Home extends Component {
@@ -44,6 +45,7 @@ export default class Home extends Component {
               key={steadySeller.mdTitle}
               mdList={steadySeller}
               marginTopVal={32}
+              scrollToTag={mdSelectList[0]}
             />
           );
         if (index === allArray.length - 6)
@@ -52,6 +54,7 @@ export default class Home extends Component {
               key={present.mdTitle}
               mdList={present}
               marginTopVal={32}
+              scrollToTag={mdSelectList[1]}
             />
           );
         if (index === allArray.length - 2)
@@ -60,6 +63,7 @@ export default class Home extends Component {
               key={household.mdTitle}
               mdList={household}
               marginTopVal={32}
+              scrollToTag={mdSelectList[2]}
             />
           );
         // if (index === allArray.length - 2)

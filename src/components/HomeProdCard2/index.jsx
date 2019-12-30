@@ -2,8 +2,13 @@ import React from "react";
 import sty from "./index.module.scss";
 import MdProdHeader from "./MdProdHeader";
 import MdProdContent from "./MdProdContent";
-// ref={this.Refs[0]}
-export default function HomeProdCard2({ mdList, reBuyNoti, marginTopVal }) {
+
+export default function HomeProdCard2({
+  mdList,
+  reBuyNoti,
+  marginTopVal,
+  scrollToTag
+}) {
   const MdProdList = mdList.list.map(x => {
     return (
       <MdProdContent
@@ -20,12 +25,14 @@ export default function HomeProdCard2({ mdList, reBuyNoti, marginTopVal }) {
   });
 
   return (
-    <div className={sty.homeProdCardWrap}>
-      <MdProdHeader mdTitle={mdList.mdTitle} />
-      <div className={sty.mdProdBody}>
-        <ul className={sty.ulWrapper}>
-          <div className={sty.mdProdWrapper}>{MdProdList}</div>
-        </ul>
+    <div className={scrollToTag}>
+      <div className={sty.homeProdCardWrap}>
+        <MdProdHeader mdTitle={mdList.mdTitle} />
+        <div className={sty.mdProdBody}>
+          <ul className={sty.ulWrapper}>
+            <div className={sty.mdProdWrapper}>{MdProdList}</div>
+          </ul>
+        </div>
       </div>
     </div>
   );

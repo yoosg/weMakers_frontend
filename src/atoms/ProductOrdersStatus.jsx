@@ -23,4 +23,3 @@ export default function ProductOrdersStatus({
     </>
   );
 }
-// 이 주문 중입니다.
