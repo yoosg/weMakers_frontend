@@ -61,8 +61,8 @@ class Login extends Component {
   }
   //서버 api
   sendLoginData = () => {
-    fetch('', {
-      method: 'GET',
+    fetch('http://10.58.7.106:8000/user/auth', {
+      method: 'POST',
       body: JSON.stringify({
         email: this.state.email,
         password: this.state.password,
@@ -70,6 +70,7 @@ class Login extends Component {
     })
       .then(res => res.json())
       .then(res => {
+        console.log(res);
         alert(res.access_token);
         localStorage.setItem('auth_token', res.access_token);
       });
