@@ -8,7 +8,10 @@ export default function KakaoHead({ switchToggle }) {
         <div className={sty.menuWrapper} onClick={switchToggle}>
           <span className={sty.menuIcon}></span>
         </div>
-        <span className={sty.logo}></span>
+        <div className={sty.logoWrap}>
+          <span className={sty.logo}></span>
+        </div>
+
         <div className={sty.searchWrapper}>
           <span className={sty.searchIcon}></span>
         </div>
