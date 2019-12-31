@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import sty from "./LikeButton.module.scss";
-import likeIcon from "../assets/icon/sprite-small-min.png";
+import likeIcon from "../assets/icon/ico_product_v2_320.png";
 import PlusFriendLayer from "../components/HomePlusFriendLayer";
 
 export default class LikeButton extends Component {

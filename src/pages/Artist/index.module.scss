@@ -80,44 +80,50 @@
 }
 .rowArtistList {
   margin-top: 34px;
-  border: 1px solid red;
+  padding-bottom: 4px;
+  border: 0.5px solid gray;
 }
 .wrapArtistItem {
   position: relative;
   width: 100%;
 }
 .artistItemImg {
-  width: 100%;
+  width: 99.9%;
   height: 100%;
   cursor: pointer;
 }
 .itemBtn {
-  border: 1px solid red;
   position: absolute;
   display: inline-block;
   z-index: 10;
-  bottom: 120px;
-  right: 48px;
+  bottom: 60px;
+  right: 28px;
 }
 .itemBtnLiked {
+  position: relative;
   width: 70px;
   height: 70px;
   font-size: 12px;
   text-align: center;
   background-color: #ffffff;
   border-radius: 50%;
-  position: relative;
+  box-shadow: 0 12px 32px 0 rgba(149, 149, 149, 0.5);
+}
+.itemBtnLikedCount {
+  padding-top: 12px;
+  margin: 8px 2px 0;
+  display: block;
 }
 .itemBtnImg {
 }
 .wrapArtistItemInfo {
-  border: 1px solid blue;
   padding: 8px 12px;
 }
 .artistItemTag {
   display: block;
   font-size: 12px;
   color: #b1b1b1;
+  letter-spacing: 0;
 }
 .artistItemTitle {
   display: block;
@@ -126,18 +132,17 @@
   color: #5a5a5a;
   font-weight: bold;
   padding-top: 6px;
+  letter-spacing: 0;
 }
 .artistItemType {
   display: block;
-  margin-top: 6px;
+  margin-top: 12px;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 12px;
   word-wrap: break-word;
   word-break: keep-all;
-  /* word-break: break-all; */
-  letter-spacing: 0;
+  letter-spacing: 0.5;
 }
 .artistItemMakers {
   font-weight: bold;
-  color: #9a9a9a;
 }

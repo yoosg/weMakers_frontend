@@ -75,7 +75,6 @@ export default function Artist() {
                 <div className={sty.itemBtn}>
                   <button type="button" className={sty.itemBtnLiked}>
                     <LikeButton />
-                    <span className={sty.itemBtnLiked}>좋아요</span>
                     <span className={sty.itemBtnLikedCount}>280</span>
                   </button>
                 </div>
@@ -85,7 +84,7 @@ export default function Artist() {
                   <span className={sty.artistItemType}>
                     아티스트 /
                     <span className={sty.artistItemMakers}>
-                      {" "}
+                      {"  "}
                       카카오메이커스
                     </span>
                   </span>
