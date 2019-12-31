@@ -6,7 +6,12 @@
 .itemName {
   font-weight: bold;
 }
-
+.orderStatus{
+  margin-top: 3px;
+  color: #DB635D;
+  font-weight: bold;
+}
+//주문하기 버튼
 .orderBtn {
   margin-top: 16px;
   display: inline-block;

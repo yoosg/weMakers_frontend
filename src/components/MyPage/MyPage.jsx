@@ -7,17 +7,22 @@ import Card from './CardEntry';
 export default class MyPage extends Component {
   render() {
     return (
-      <div className={sty.all}>
+      <div className={sty.myPage}>
         <Header />
-        <ul className={sty.navLikedAndOrder}>
-          <li className={sty.like}></li>
-          <li className={sty.order}></li>
-        </ul>
-        <article className={sty.myPageContainer}>
-          <div className={sty.likedAndOrder}>
-            <Card />
-          </div>
-        </article>
+        <div className={sty.navLikedAndOrderWrap}>
+          <ul className={sty.navLikedAndOrder}>
+            <li className={sty.like}>좋아요</li>
+            <li className={sty.order}>주문 및 배송 내역</li>
+          </ul>
+        </div>
+        <div className={sty.itemContainer}>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
     );
   }

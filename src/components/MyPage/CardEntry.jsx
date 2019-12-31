@@ -5,12 +5,11 @@ import Info from './Info';
 import '../../common/reset.scss';
 
 export default class CardEntry extends Component {
-
   render() {
     return (
       <div className={sty.container}>
         <li className={sty.lists}>
-          {/* <a className={sty.id= href}/> */}
+          <a className={sty.like} />
           <img
             className={sty.itemImg}
             src="https://mud-kage.kakaocdn.net/dn/qw8lR/bIcxYaakfob/guHX26MP2edYIJ0HkMMN2K/img.jpg?convert=resize2&w=320&h=320"
@@ -23,9 +22,7 @@ export default class CardEntry extends Component {
               // onChange={this.clickLikeBtn}
             />
           </div>
-          <span
-            className={sty.likeBtn}
-          ></span>
+          <span className={sty.likeBtn}></span>
           <Info />
         </li>
       </div>

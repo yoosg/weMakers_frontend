@@ -7,6 +7,7 @@ export default class Info extends Component {
       <div className={sty.wrap}>
         <div className={sty.itemName}>서버에서 받아와야하는 이름</div>
         <div className={sty.itemPrice}>17800원</div>
+        <div className={sty.orderStatus}>주문종료 D-day 3</div>
         <button className={sty.orderBtn}>주문하기</button>
       </div>
     );
