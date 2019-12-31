@@ -85,11 +85,7 @@ export default class SignUp extends Component {
               },
             });
             return false;
-          } else if (
-            !/^.*(?=^.{8,32}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/.test(
-              this.state.data.password
-            )
-          ) {
+          } else if (!/^[a-zA-Z0-9]{8,32}$/.test(this.state.data.password)) {
             this.setState({
               errorMsg: {
                 ...this.state.errorMsg,
@@ -147,7 +143,7 @@ export default class SignUp extends Component {
   postSignup() {
     console.log('signup하고있음');
     // 전부통과시 서버로 전송할 데이터 (fetch)
-    fetch('http://10.58.7.106:8001/user', {
+    fetch('http://10.58.1.149:8001/user', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
