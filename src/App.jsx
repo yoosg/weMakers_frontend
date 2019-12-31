@@ -4,6 +4,7 @@ import sty from "./App.module.scss";
 import Header from "./components/Header/Header";
 import SideDrawer from "./pages/SideDrawer";
 import Home from "./pages/Home";
+import Artist from "./pages/Artist";
 
 import Footer from "./components/Footer";
 export default class App extends Component {
@@ -23,7 +24,8 @@ export default class App extends Component {
           <SideDrawer show={sideMenu} switchToggle={this.switchToggle} />
           <Header switchToggle={this.switchToggle} />
           <div className={sty.appContentLayout}>
-            <Home />
+            {/* <Home /> */}
+            <Artist />
           </div>
           <Footer />
         </div>
