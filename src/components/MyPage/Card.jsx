@@ -17,9 +17,9 @@ export default class Card extends Component {
   }
   render() {
     return (
-      <div>
+      <>
         <CardEntry/>
-      </div>
+      </>
     )
   }
 }

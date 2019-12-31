@@ -2,6 +2,9 @@
   max-width: 640px;
   margin: 0 auto;
 }
+.container {
+  padding: 130px 0;
+}
 
 .navLikedAndOrder {
   background-color: #f9f9f9;
@@ -19,10 +22,6 @@
   border-bottom: 1px solid #efefef;
 }
 
-.itemContainer {
-  display: flex;
-  width: 640px;
-}
 
 .myPageContainer {
   max-width: 640px;

@@ -1,21 +1,17 @@
 .container {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  padding: 20px 0;
+  display: inline;
   border: 0 none;
-  display: flex;
 }
-
 .lists {
   display: inline-block;
   width: 33.33%;
 }
 .itemImg {
+  position: relative;
   width: 100%;
   cursor: pointer;
 }
-
+//버튼
 .likeBtnWrap {
   display: inline-block;
   position: absolute;

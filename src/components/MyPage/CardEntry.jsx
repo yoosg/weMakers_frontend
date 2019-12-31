@@ -18,8 +18,6 @@ export default class CardEntry extends Component {
             <button
               className={sty.button}
               type="button"
-              // checked={this.state.isLiked}
-              // onChange={this.clickLikeBtn}
             />
           </div>
           <span className={sty.likeBtn}></span>

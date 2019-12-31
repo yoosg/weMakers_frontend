@@ -15,15 +15,21 @@ export default class MyPage extends Component {
             <li className={sty.order}>주문 및 배송 내역</li>
           </ul>
         </div>
-        <div className={sty.itemContainer}>
+        <div className={sty.container}>
           <Card />
           <Card />
           <Card />
           <Card />
           <Card />
           <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          </div>
         </div>
-      </div>
     );
   }
 }
