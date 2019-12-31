@@ -1,0 +1,173 @@
+.productReviewBox {
+  border-bottom: 1px solid #e6e6e6;
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+}
+.reviewInfo {
+  border-bottom: 1px solid #e6e6e6;
+  .satisfyPurchase {
+    padding: 24px;
+    color: #000000;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  .rateTxt {
+    font-size: 16px;
+  }
+  .rate {
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+.writeLink {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px;
+  .point {
+  }
+  .writeImg {
+  }
+}
+
+.reviewGraph {
+  margin: 18px 16px 11px 16px;
+  .graphElement {
+    position: relative;
+    padding-bottom: 18px;
+    list-style: none;
+  }
+  .satisfyScoreBox {
+    width: 57px;
+    height: 20px;
+    list-style: none;
+    background-image: url("../../../assets/icon/bg_rate_320.png");
+    background-position: 0 0;
+  }
+
+  .evaluate {
+    position: absolute;
+    top: 0;
+    left: 66px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    line-height: 17px;
+  }
+  .bgBar {
+    display: block;
+    height: 8px;
+    background-color: #f1f1f1;
+  }
+
+  .txtScore {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #9b9b9b;
+    font-size: 14px;
+  }
+}
+.participation {
+  display: block;
+  margin-top: -6px;
+  color: #9b9b9b;
+  font-size: 13px;
+  text-align: right;
+  letter-spacing: 0px;
+  button {
+    width: 20px;
+    height: 20px;
+    text-align: right;
+    border: 0 none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+  }
+}
+
+.helpBtn {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #b9b9b9;
+  border-radius: 50%;
+  vertical-align: top;
+  span {
+    display: block;
+    width: 5px;
+    height: 8px;
+    margin: 3px 0 0 5px;
+    font-size: 0;
+    background-image: url("../../../assets/icon/ico_product_v2_320.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: -100px 0;
+  }
+}
+.satisfyScore {
+  width: 57px;
+  height: 20px;
+  background-image: url("../../../assets/icon/bg_rate_320.png");
+  background-position: 0 -20px;
+  display: block;
+  overflow: hidden;
+  font-size: 1px;
+}
+.writeLink {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 12px;
+  color: #696969;
+  text-align: center;
+  letter-spacing: -0.33px;
+  .point {
+    display: inline-block;
+    font-weight: bold;
+    color: #4875cc;
+  }
+  .writeImg {
+    position: relative;
+    top: 50%;
+    right: 16px;
+    margin-top: -5px;
+    display: block;
+    float: right;
+    width: 6px;
+    height: 10px;
+    background-image: url("../../../assets/icon/ico_product_v2_320.png");
+    background-position: -60px -20px;
+  }
+}
+.innerBar {
+  background-color: #db635d;
+  display: block;
+  height: 8px;
+}
+.score2 {
+  width: 75%;
+  height: 12px;
+  background-position: 0 -40px;
+}
+.inner2 {
+  background-color: #d9d9d9;
+}
+.score3 {
+  width: 50%;
+  height: 12px;
+  background-position: 0 -40px;
+}
+.inner3 {
+  background-color: #d9d9d9;
+}
+.score4 {
+  width: 25%;
+  height: 12px;
+  background-position: 0 -40px;
+}
+.inner4 {
+  background-color: #d9d9d9;
+}

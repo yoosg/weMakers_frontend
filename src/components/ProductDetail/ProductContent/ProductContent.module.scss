@@ -1,26 +1,10 @@
-.tit_box {
-  display: block;
-  padding: 10px 12px;
-  border-bottom: 1px solid #e6e6e6;
-}
-.tit_name {
-  display: block;
-  font-size: 14px;
-  font-weight: normal;
-}
-.tit_price {
-  display: block;
-  font-weight: bold;
-  font-size: 14px;
-  /* padding: 10px 0; */
-}
-.order_count_box {
+.orderCountBox {
   padding: 20px 12px 0;
 }
-.count_info {
+.countInfo {
   border-bottom: 1px solid #f1f1f1;
 }
-.order_set {
+.orderSet {
   font-size: 20px;
   display: inline-block;
   font-weight: lighter;
@@ -28,10 +12,10 @@
 
 /* graph */
 
-.order_graph {
+.orderGraph {
   padding: 10px 0 17px;
 }
-.order_text {
+.orderText {
   display: block;
   font-weight: bold;
 }
@@ -41,12 +25,12 @@
   margin: 21px 0 33px;
   background-color: #dedede;
 }
-.sell_line {
+.sellLine {
   width: 34%;
   height: 5px;
   background-color: #db635d;
 }
-.max_point {
+.maxPoint {
   position: absolute;
   top: -4px;
   right: 0;
@@ -70,7 +54,7 @@
   display: block;
   font-size: 11px;
 }
-.min_point {
+.minPoint {
   position: absolute;
   top: -4px;
   width: 32px;
@@ -95,13 +79,13 @@
 .div {
   display: block;
 }
-.order_count {
+.orderCount {
   color: #8e8e8e;
   font-size: 10px;
   padding-bottom: 5px;
 }
-.min_color,
-.max_color {
+.minColor,
+.maxColor {
   background-color: #db635d;
   width: 7px;
   height: 7px;
@@ -109,7 +93,7 @@
   border-radius: 50%;
   display: inline-block;
 }
-.max_color {
+.maxColor {
   background-color: #848484;
 }
 p {
