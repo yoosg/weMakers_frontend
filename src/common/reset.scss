@@ -168,3 +168,17 @@ select {
 ​ textarea {
   resize: none;
 }
+ul,
+ol,
+li {
+  list-style: none;
+}
+ul {
+  display: block;
+}
+li {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}

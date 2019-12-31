@@ -1,0 +1,14 @@
+import React, { Component } from 'react';
+import sty from '../MyPage/Info.module.scss';
+
+export default class Info extends Component {
+  render() {
+    return (
+      <div className={sty.wrap}>
+        <div className={sty.itemName}>서버에서 받아와야하는 이름</div>
+        <div className={sty.itemPrice}>17800원</div>
+        <button className={sty.orderBtn}>주문하기</button>
+      </div>
+    );
+  }
+}
