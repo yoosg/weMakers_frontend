@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 div,
@@ -114,7 +118,7 @@ q {
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 ​ a {
@@ -167,4 +171,19 @@ select {
 }
 ​ textarea {
   resize: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+ul {
+  display: block;
+}
+li {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
 }
