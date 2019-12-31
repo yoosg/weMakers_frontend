@@ -6,8 +6,8 @@ import sty from "./ProductDetailTitle.module.scss";
 export default class ProductDetailTitle extends Component {
   render() {
     return (
-      <div className={sty.detail_title}>
-        <span className={sty.product_category}>
+      <div className={sty.detailTitle}>
+        <span className={sty.productCategory}>
           <a href='https://makers.kakao.com/category/8'>문구</a>
           <span className={sty.arrow}>></span>
           <a href='https://makers.kakao.com/category/101'>

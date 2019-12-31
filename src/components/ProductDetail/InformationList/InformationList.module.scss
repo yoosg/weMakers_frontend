@@ -1,0 +1,33 @@
+.li {
+  list-style: none;
+  width: 25%;
+  float: left;
+  height: 48px;
+  line-height: 44px;
+  text-align: center;
+}
+.productinfo {
+  display: block;
+  height: 100%;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.35px;
+  cursor: pointer;
+}
+
+.informationTxt {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  padding-top: 4px;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0px;
+}
+.select {
+  color: #db635d;
+  span {
+    border-bottom: 3px solid #db635d;
+    height: 88%;
+  }
+}

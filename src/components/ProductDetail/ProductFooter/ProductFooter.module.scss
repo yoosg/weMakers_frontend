@@ -1,0 +1,44 @@
+.kakaoFoot {
+  margin: 0 auto;
+  padding: 20px 14px 100px;
+  border-top: 1px solid #e0e0e0;
+  font-family: sans-serif;
+  background-color: #fff;
+  clear: both;
+  height: 98px;
+  width: 96%;
+  float: left;
+}
+.kakaoLink {
+  float: left;
+  span {
+    display: block;
+    width: 35px;
+    height: 12px;
+    background-image: url("../../../assets/img_txt_m320.png");
+    background-position: 0 -14px;
+  }
+}
+
+.infoLinkBox {
+  display: block;
+  overflow: hidden;
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+  list-style: none;
+}
+.infoLink {
+  display: block;
+  float: left;
+  padding: 0 1px 0 16px;
+  list-style: none;
+}
+.linkText {
+  display: block;
+  font-size: 10px;
+  color: #a3a3a3;
+  letter-spacing: -1px;
+  text-decoration: none;
+  cursor: pointer;
+}
