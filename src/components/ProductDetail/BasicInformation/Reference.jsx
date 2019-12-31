@@ -6,39 +6,33 @@ export default class Reference extends Component {
     super(props);
     this.state = {
       reference: this.props.data,
-      onOff: false
+      on: false
     };
   }
 
   noticeToggle = target => () => {
-    const { onOff } = this.state;
-    const onoff = !onOff;
+    const { on } = this.state;
     this.setState({
-      onOff: onoff
+      on: !on
     });
   };
   render() {
     const { title } = this.props.data;
-    const { reference, onOff } = this.state;
+    const { reference, on } = this.state;
     const noticeList = reference.notice.map((i, index) => (
       <ReferenceElement key={index} Notice={i} />
     ));
-    let hidden;
-    if (onOff === true) {
-      hidden = <div className={sty.notice}>{noticeList}</div>;
-    } else {
-      hidden = null;
-    }
+
     return (
       <li className={sty.referenceBox}>
         <span className={sty.referenceTitle}>
           <strong>{title}</strong>
           <span
-            className={`${sty.noticeOpen} ${onOff && sty.noticeClose}`}
+            className={`${sty.noticeOpen} ${on && sty.noticeClose}`}
             onClick={this.noticeToggle(reference.title)}
           ></span>
         </span>
-        {hidden}
+        {on && <div className={sty.notice}>{noticeList}</div>}
       </li>
     );
   }

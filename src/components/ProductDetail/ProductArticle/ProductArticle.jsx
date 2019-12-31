@@ -12,46 +12,40 @@ import ProductFooter from "../ProductFooter/ProductFooter";
 import ProductAdvice from "../ProductAdvice/ProductAdvice";
 import sty from "./ProductArticle.module.scss";
 
+const toggleData = [
+  { title: "상세정보", id: 1 },
+  { title: "기본정보", id: 2 },
+  { title: "구매후기", id: 3 },
+  { title: "제품문의", id: 4 }
+];
+const tabContent = {
+  1: <DetailInformation />,
+  2: <BasicInformation />,
+  3: <ProductReview />,
+  4: <ProductInquiry />
+};
+
 export default class ProductArticle extends Component {
   state = {
-    toggleData: [
-      { title: "상세정보", choice: true },
-      { title: "기본정보", choice: false },
-      { title: "구매후기", choice: false },
-      { title: "제품문의", choice: false }
-    ]
+    activeTab: 1
   };
-  tabChoice = target => () => {
-    const { toggleData } = this.state;
-    let newChoice = toggleData.map(element => {
-      const flag = element.title === target;
-      return {
-        title: element.title,
-        choice: flag
-      };
-    });
+  tabChoice = id => () => {
     this.setState({
-      toggleData: newChoice
+      activeTab: id
     });
   };
 
   render() {
-    const { toggleData } = this.state;
     const { linkBox } = this.props;
     console.log(this.props.linkBox);
     const list = toggleData.map((data, index) => (
-      <InformationList key={index} data={data} tabChoice={this.tabChoice} />
+      <InformationList
+        key={index}
+        data={data}
+        tabChoice={this.tabChoice}
+        choice={this.state.activeTab === data.id}
+      />
     ));
-    let show;
-    if (toggleData[0].choice === true) {
-      show = <DetailInformation />;
-    } else if (toggleData[1].choice === true) {
-      show = <BasicInformation />;
-    } else if (toggleData[2].choice === true) {
-      show = <ProductReview />;
-    } else if (toggleData[3].choice === true) {
-      show = <ProductInquiry />;
-    }
 
     return (
       <article className={sty.Article}>
@@ -82,7 +76,9 @@ export default class ProductArticle extends Component {
         <div className={sty.contentLine}></div>
         <ul className={sty.informationList}>{list}</ul>
 
-        <div className={sty.mainContent}>{show}</div>
+        <div className={sty.mainContent}>
+          {tabContent[this.state.activeTab]}
+        </div>
         <BrandInformation />
         <ProductAdvice />
         <ProductFooter />

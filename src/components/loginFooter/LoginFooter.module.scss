@@ -1,0 +1,41 @@
+.loginFooter {
+  text-align: center;
+  padding: 20px 0 60px;
+  border-top: 1px solid #e5e5e5;
+  font-size: 12.5px;
+
+  .txt_copyright {
+    display: block;
+    margin-top: 8px;
+    line-height: 18px;
+    font-size: 11px;
+    color: #7c7c7c;
+    letter-spacing: 0;
+  }
+  .link_kakao {
+    font-weight: bolder;
+  }
+  .link_info {
+    text-decoration: none;
+    color: #4c4c4c;
+  }
+  .link_policy {
+    color: #4c4c4c;
+    font-weight: bold;
+  }
+  .space {
+    padding: 0 10px;
+  }
+  .footerInfo {
+    display: inline-block;
+    letter-spacing: -0.03em;
+  }
+  /*한국어*/
+  .selectLan {
+    display: inline-block;
+  }
+  .link_kakao {
+    color: #4c4c4c;
+    font-weight: bolder;
+}
+}

@@ -1,0 +1,28 @@
+.checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../assets/icon/ico_account_640.png');
+  background-size: 200px 220px;
+  background-position: -30px -30px;
+}
+.checked {
+  background-position: 0 -30px;
+}
+
+.checkLogin {
+  font-size: 14px;
+  letter-spacing: -0.03em;
+}
+.setLogin {
+  margin: 25px auto 25px auto;
+}
+.checkboxInput {
+  display: none;
+}
+.spanCheckLogin{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  margin-top: 2px;
+}
