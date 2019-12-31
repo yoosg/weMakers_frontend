@@ -1,0 +1,51 @@
+.kakaoWrap {
+  position: relative;
+  height: 100%;
+  vertical-align: middle;
+}
+.container {
+  position: relative;
+  width: 420px;
+  height: 454px;
+  margin: 37px 40px 0 0;
+  font-size: 16px;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  max-width: 420px;
+  padding: 60px 70px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: table;
+  margin: 99px auto 99px auto;
+}
+//로고
+.kakao {
+  margin-bottom: 30px;
+  font-size: 32px;
+  display: block;
+  width: 88px;
+  height: 28px;
+  font-family: sans-serif;
+  background-image: url('../../store/imgSprite_Login.png');
+  background-repeat: no-repeat no-repeat;
+  background-position-x: 0px;
+}
+
+
+
+/*아래 3개*/
+
+
+/*이벤트달것들*/
+// .help {
+//   display: block;
+//     width: 20px;
+//     height: 20px;
+//     background-image: url("");
+//     background-position: 0 200px;
+// }

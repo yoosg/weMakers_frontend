@@ -14,16 +14,16 @@ class SimpleSlider extends React.Component {
     };
     return (
       <Slider {...settings}>
-        <div>
+        <div className='sliderBox'>
           <img src='//mud-kage.kakaocdn.net/dn/ckDhkL/bIcxX9oV15l/QWkx4drfvCO9RGWfKTidXK/img.jpg?convert=resize2&w=640&h=500' />
         </div>
-        <div>
+        <div className='sliderBox'>
           <img src='//mud-kage.kakaocdn.net/dn/ZcZfc/bIcxYc0hqWA/jJELbkOSfkJPulz496hHHK/img.jpg?convert=resize2&w=640&h=500' />
         </div>
-        <div>
+        <div className='sliderBox'>
           <img src='//mud-kage.kakaocdn.net/dn/5dwrv/bIcxYa9dBmI/NHUK9O93jUY5eKKJheuw21/img.jpg?convert=resize2&w=640&h=500' />
         </div>
-        <div>
+        <div className='sliderBox'>
           <img src='//mud-kage.kakaocdn.net/dn/kS97J/bIcxX6Mwnql/kzypHZGbsx357spzZyNYuk/img.jpg?convert=resize2&w=640&h=500' />
         </div>
       </Slider>

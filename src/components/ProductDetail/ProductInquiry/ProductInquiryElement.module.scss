@@ -1,0 +1,50 @@
+.inquiryElementContainer {
+  padding: 22px 12px 20px;
+
+  .inquiryElementBox {
+    position: relative;
+  }
+  .inquiryReview {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.45px;
+    color: #1a1a1a;
+  }
+  .inquiryUserInfo {
+    margin-top: 6px;
+    position: relative;
+    .inquiryUser {
+      display: block;
+      margin-top: 5px;
+      font-size: 11px;
+      line-height: 12px;
+      color: #b2b2b2;
+      .inquiryTime {
+        padding-left: 3px;
+        font-size: 11px;
+        line-height: 12px;
+        color: #b2b2b2;
+      }
+    }
+  }
+  .inquiryAnswerBox {
+    margin: 0 0 -20px;
+    padding: 16px 0 18px;
+    strong {
+      font-size: 12px;
+      color: #db635d;
+    }
+    .inquiryAnswer {
+      letter-spacing: -0.45px;
+      padding: 7px 0 0;
+      font-size: 14px;
+      line-height: 20px;
+      position: relative;
+      color: #404040;
+    }
+  }
+}
+.topLineNone {
+  border-top: 1px solid #d0d0d0;
+}
