@@ -4,7 +4,6 @@ import App from "./App";
 import Login from './components/login/Login'
 import '../src/common/reset.scss';
 
-
 function routes() {
   return (
     <Router>
