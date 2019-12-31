@@ -7,9 +7,13 @@
   min-width: 320px;
   height: 55px;
   margin: 0 auto;
-  border: 1px solid lightgreen;
-  background-color: #fafafa;
-  z-index: 1;
+  /* border: 1px solid lightgreen;
+  background-color: #fafafa; */
+  z-index: 0;
+}
+.titleContainer {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
 }
 .titleBox {
   text-align: center;

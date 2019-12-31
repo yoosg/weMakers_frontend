@@ -2,6 +2,7 @@
   overflow: hidden;
   padding: 22px 13px;
   margin: 0;
+  border-bottom: 1px solid #f0f0f0;
 }
 .channelBtnBox {
   text-align: left;
@@ -30,22 +31,26 @@
   background-position: -60px 0;
   position: absolute;
   left: 5px;
+  letter-spacing: 0px;
 }
 .adviceBox {
   overflow: hidden;
   padding: 22px 13px;
-  margin: 0;
 }
 .adviceTitle {
   padding-bottom: 8px;
   font-size: 12px;
   line-height: 15px;
   color: #4a4a4a;
+  font-weight: bold;
+  letter-spacing: 0px;
 }
 .adviceContent {
   padding-bottom: 0;
   line-height: 20px;
   font-size: 12px;
+  color: #565656;
+  letter-spacing: 0px;
 }
 .period {
   color: #9b9b9b;
@@ -53,11 +58,13 @@
   padding-bottom: 0;
   line-height: 20px;
   font-size: 12px;
+  letter-spacing: 0px;
 }
 .adviceBtnBox {
   text-align: left;
   margin-top: 16px;
   position: relative;
+  letter-spacing: 0px;
 }
 .adviceBtnBox {
   background-color: #fed800;

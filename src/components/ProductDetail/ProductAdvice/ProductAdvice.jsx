@@ -20,8 +20,9 @@ export default class ProductAdvice extends Component {
           <h3 className={sty.adviceTitle}>무엇을 도와드릴까요?</h3>
           <p className={sty.adviceContent}>
             서비스 이용에 불편함이 있다면 채팅 상담, 문의글 남기기를
-            이용하시거나 {"\n"} 고객센터(1644-2284)로 전화주세요.
+            이용하시거나
           </p>
+          <p className={sty.adviceContent}>고객센터(1644-2284)로 전화주세요.</p>
           <div className={sty.period}>
             (채팅/전화 상담 가능 시간: 평일 10시 ~ 18시 30분)
           </div>

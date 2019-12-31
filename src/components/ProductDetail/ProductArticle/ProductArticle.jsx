@@ -33,10 +33,12 @@ export default class ProductArticle extends Component {
     this.setState({
       toggleData: newChoice
     });
-    console.log(toggleData);
   };
+
   render() {
     const { toggleData } = this.state;
+    const { linkBox } = this.props;
+    console.log(this.props.linkBox);
     const list = toggleData.map((data, index) => (
       <InformationList key={index} data={data} tabChoice={this.tabChoice} />
     ));
@@ -56,10 +58,12 @@ export default class ProductArticle extends Component {
         <ProductDetailTitle />
         <ProductTopImage />
         <div className={sty.titBox}>
-          <a className={sty.titName}> 153 ID 스페셜 에디션 키워드 펜</a>
+          <a href={"localhost:3000/detail"} className={sty.titName}>
+            153 ID 스페셜 에디션 키워드 펜
+          </a>
           <span className={sty.titPrice}>21,900원</span>
 
-          <a className={sty.linkBtn}>
+          <a className={sty.linkBtn} onClick={linkBox}>
             <span className={sty.linkImg}></span>
           </a>
         </div>
@@ -68,7 +72,10 @@ export default class ProductArticle extends Component {
           <span className={sty.shippingTitle}>배송예정일</span>
           <p className={sty.shippingText}>
             지금 주문하시면
-            <em className={sty.shippingTextDetail}>1월 3주경(17일) 배송시작</em>
+            <em className={sty.shippingTextDetail}>
+              {" "}
+              1월 3주경(17일) 배송시작
+            </em>
             예정
           </p>
         </div>

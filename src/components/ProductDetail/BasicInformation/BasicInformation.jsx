@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import BasicInfo from "./BasicInfo";
 import Reference from "./Reference";
 import basicData from "./BasicInformationData";
+import OftenQA from "./OftenQA";
 import sty from "./BasicInformation.module.scss";
 export default class BasicInformation extends Component {
   render() {
@@ -19,6 +20,10 @@ export default class BasicInformation extends Component {
               <Reference key={index} data={refData} />
             ))}
           </ul>
+        </div>
+        <div className={sty.oftenQuestion}>
+          <h3>자주하는질문</h3>
+          <div className={sty.questionList}></div>
         </div>
       </div>
     );
