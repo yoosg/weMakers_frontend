@@ -4,6 +4,168 @@ import sty from './SignUp.module.scss';
 import LoginFooter from '../loginFooter/LoginFooter';
 
 export default class SignUp extends Component {
+<<<<<<< HEAD
+=======
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: {
+        email: '',
+        password: '',
+        passwordAgain: '',
+        nickname: '',
+      },
+      errorMsg: {
+        email: '',
+        password: '',
+        nickname: '',
+      },
+    };
+    this.changeData = this.changeData.bind(this);
+    this.removeInput = this.removeInput.bind(this);
+    this.checkValidation = this.checkValidation.bind(this);
+    this.postSignup = this.postSignup.bind(this);
+  }
+
+  changeData(type, e) {
+    this.setState({
+      data: {
+        email: this.state.data.email,
+        password: this.state.data.password,
+        passwordAgain: this.state.data.passwordAgain,
+        nickname: this.state.data.nickname,
+        [type]: e.target.value,
+      },
+    });
+  }
+
+  removeInput(type, e) {
+    this.setState({
+      data: {
+        ...this.state.data,
+        [type]: '',
+      },
+    });
+  }
+
+  checkValidation() {
+    // email 체크하고 password, nickname순으로 실행됨.
+    if (this.state.data.email === '') {
+      this.setState({
+        errorMsg: {
+          ...this.state.errorMsg,
+          email: '이메일을 입력해주세요.',
+        },
+      });
+      return false;
+    } else if (
+      !/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i.test(
+        this.state.data.email
+      )
+    ) {
+      this.setState({
+        errorMsg: {
+          ...this.state.errorMsg,
+          email: '이메일이 올바르지 않습니다.',
+        },
+      });
+      return false;
+    } else {
+      this.setState(
+        {
+          errorMsg: {
+            ...this.state.errorMsg,
+            email: '',
+          },
+        },
+        () => {
+          if (this.state.data.password === '') {
+            this.setState({
+              errorMsg: {
+                ...this.state.errorMsg,
+                password: '비밀번호를 입력해주세요.',
+              },
+            });
+            return false;
+          } else if (
+            !/^.*(?=^.{8,32}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/.test(
+              this.state.data.password
+            )
+          ) {
+            this.setState({
+              errorMsg: {
+                ...this.state.errorMsg,
+                password:
+                  '특수문자,문자,숫자 포함 형태의 8~32자리 이내로 입력해주세요.',
+              },
+            });
+            return false;
+          } else if (
+            this.state.data.password !== this.state.data.passwordAgain
+          ) {
+            this.setState({
+              errorMsg: {
+                ...this.state.errorMsg,
+                password: '비밀번호를 동일하게 입력해주세요.',
+              },
+            });
+            return false;
+          } else {
+            this.setState(
+              {
+                errorMsg: {
+                  ...this.state.errorMsg,
+                  password: '',
+                },
+              },
+              () => {
+                if (this.state.data.nickname === '') {
+                  this.setState({
+                    errorMsg: {
+                      ...this.state.errorMsg,
+                      nickname: '닉네임을 입력해주세요.',
+                    },
+                  });
+                  return false;
+                } else {
+                  this.setState(
+                    {
+                      errorMsg: {
+                        ...this.state.errorMsg,
+                        nickname: '',
+                      },
+                    },
+                    this.postSignup
+                  );
+                }
+              }
+            );
+          }
+        }
+      );
+    }
+  }
+
+  postSignup() {
+    console.log('asd');
+    // 전부통과시 서버로 전송할 데이터 (fetch)
+    fetch('http://10.58.7.106:8000/user', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: this.state.data.email,
+        password: this.state.data.password,
+        nickname: this.state.data.nickname,
+      }),
+    })
+      .then(res => res.json())
+      .then(res => {
+        alert('success');
+      });
+  }
+>>>>>>> 8181c33219c6e113803fe1424e26a9b8ce5e183a
   render() {
     return (
         <div className={sty.container}>
