@@ -2,6 +2,7 @@ import React from "react";
 import sty from "./index.module.scss";
 import ArtistFeaturedItem from "../../components/ArtistFeaturedItem";
 import ArtistCatgoryTabs from "../../components/ArtistCategoryTabs";
+import LikeButton from "../../atoms/LikeButton";
 export default function Artist() {
   return (
     <div className={sty.artistWrap}>
@@ -70,6 +71,13 @@ export default function Artist() {
                     alt="item"
                     className={sty.artistItemImg}
                   />
+                </div>
+                <div className={sty.itemBtn}>
+                  <button type="button" className={sty.itemBtnLiked}>
+                    <LikeButton />
+                    <span className={sty.itemBtnLiked}>좋아요</span>
+                    <span className={sty.itemBtnLikedCount}>280</span>
+                  </button>
                 </div>
                 <div className={sty.wrapArtistItemInfo}>
                   <span className={sty.artistItemTag}>#맨투맨/후디</span>

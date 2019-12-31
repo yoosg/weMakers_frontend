@@ -83,6 +83,7 @@
   border: 1px solid red;
 }
 .wrapArtistItem {
+  position: relative;
   width: 100%;
 }
 .artistItemImg {
@@ -90,7 +91,25 @@
   height: 100%;
   cursor: pointer;
 }
-
+.itemBtn {
+  border: 1px solid red;
+  position: absolute;
+  display: inline-block;
+  z-index: 10;
+  bottom: 120px;
+  right: 48px;
+}
+.itemBtnLiked {
+  width: 70px;
+  height: 70px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+}
+.itemBtnImg {
+}
 .wrapArtistItemInfo {
   border: 1px solid blue;
   padding: 8px 12px;
