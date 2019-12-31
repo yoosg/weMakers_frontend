@@ -1,0 +1,22 @@
+.appDownWrap {
+  position: relative;
+  padding: 17px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.a {
+  position: relative;
+  display: inline-block;
+  margin-left: 38px;
+  font-size: 15px;
+}
+.logoImg {
+  position: absolute;
+  top: -4px;
+  left: -36px;
+  width: 28px;
+  height: 28px;
+  background-image: url("../../assets/makers_app_download_black.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

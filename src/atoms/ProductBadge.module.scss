@@ -1,0 +1,24 @@
+.prodBadgeWrapper {
+  position: absolute;
+  top: -64px;
+  left: 16px;
+}
+.prodBadge {
+  display: table;
+  position: relative;
+  border: 1px solid #e68c29;
+}
+.prodBadgeNameWrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.prodBadgeName {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 10px;
+  background-color: #ef9736;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+}

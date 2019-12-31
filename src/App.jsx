@@ -3,7 +3,9 @@ import "./common/reset.scss";
 import sty from "./App.module.scss";
 import Header from "./components/Header/Header";
 import SideDrawer from "./pages/SideDrawer";
+import Home from "./pages/Home";
 
+import Footer from "./components/Footer";
 export default class App extends Component {
   state = {
     sideMenu: false
@@ -17,9 +19,13 @@ export default class App extends Component {
     const { sideMenu } = this.state;
     return (
       <div className={sty.app}>
-        <SideDrawer show={sideMenu} switchToggle={this.switchToggle} />
-        <div>
+        <div className={sty.appLayout}>
+          <SideDrawer show={sideMenu} switchToggle={this.switchToggle} />
           <Header switchToggle={this.switchToggle} />
+          <div className={sty.appContentLayout}>
+            <Home />
+          </div>
+          <Footer />
         </div>
       </div>
     );
