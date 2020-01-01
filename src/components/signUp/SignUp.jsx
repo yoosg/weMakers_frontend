@@ -85,16 +85,12 @@ export default class SignUp extends Component {
               },
             });
             return false;
-          } else if (
-            !/^.*(?=^.{8,32}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/.test(
-              this.state.data.password
-            )
-          ) {
+          } else if (!/^[a-zA-Z0-9]{8,32}$/.test(this.state.data.password)) {
             this.setState({
               errorMsg: {
                 ...this.state.errorMsg,
                 password:
-                  '특수문자,문자,숫자 포함 형태의 8~32자리 이내로 입력해주세요.',
+                  '영문 숫자 조합 8~32자리 이내로 입력해주세요.',
               },
             });
             return false;
@@ -145,9 +141,9 @@ export default class SignUp extends Component {
   }
 
   postSignup() {
-    console.log('asd');
+    console.log('signup하고있음');
     // 전부통과시 서버로 전송할 데이터 (fetch)
-    fetch('http://10.58.7.106:8000/user', {
+    fetch('http://10.58.3.61:8001/user', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -160,6 +156,7 @@ export default class SignUp extends Component {
     })
       .then(res => res.json())
       .then(res => {
+        console.log('가입성공 데이터', res);
         alert('success');
       });
   }
