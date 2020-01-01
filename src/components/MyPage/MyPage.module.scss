@@ -2,9 +2,6 @@
   max-width: 640px;
   margin: 0 auto;
 }
-.container {
-  padding: 130px 0;
-}
 
 .navLikedAndOrder {
   background-color: #f9f9f9;
@@ -12,9 +9,10 @@
 }
 
 //좋아요 , 주문 및 배송 내역
-.navLikedAndOrderWrap {
+.myPageConatiner {
   max-width: 640px;
   margin: 0 auto;
+  margin-top: 130px;
 }
 
 .navLikedAndOrder {

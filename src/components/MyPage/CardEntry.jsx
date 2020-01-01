@@ -6,21 +6,16 @@ import '../../common/reset.scss';
 
 export default class CardEntry extends Component {
   render() {
+    const { card } = this.props; //둘러 쌓으면 됨
     return (
       <div className={sty.container}>
         <li className={sty.lists}>
           <a className={sty.like} />
           <img
             className={sty.itemImg}
-            src="https://mud-kage.kakaocdn.net/dn/qw8lR/bIcxYaakfob/guHX26MP2edYIJ0HkMMN2K/img.jpg?convert=resize2&w=320&h=320"
+            src={card.src}
           ></img>
-          <div className="likeBtnWrap">
-            <button
-              className={sty.button}
-              type="button"
-            />
-          </div>
-          <span className={sty.likeBtn}></span>
+          <span className={`${sty.likeBtn} ${card.isLike ? '': sty.empty}`}></span>
           <Info />
         </li>
       </div>

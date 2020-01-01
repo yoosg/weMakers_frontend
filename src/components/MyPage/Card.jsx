@@ -1,25 +1,44 @@
-import React, { Component } from 'react'
-import '../MyPage/Card.module.scss'
+import React, { Component } from 'react';
+import '../MyPage/Card.module.scss';
 import CardEntry from './CardEntry';
 
 export default class Card extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLiked: false,
+      cards: [],
     };
-    this.clickLikeBtn = this.clickLikeBtn.bind(this);
   }
-  clickLikeBtn() {
-    this.setState({
-      isLiked: !this.state.isLiked,
-    });
+
+  getCardData() {
+    // fetch logic
   }
+
+  componentDidMount() {
+    this.getCardData();
+  }
+
   render() {
-    return (
-      <>
-        <CardEntry/>
-      </>
-    )
+    const cards = [
+      {
+        id: '21329300',
+        src:
+          'https://mud-kage.kakaocdn.net/dn/qw8lR/bIcxYaakfob/guHX26MP2edYIJ0HkMMN2K/img.jpg?convert=resize2&w=320&h=320',
+        name: 'name',
+        price: 17000,
+        dDay: 3,
+        isLike: true,
+      },
+      {
+        id: '21329300',
+        src:
+          'https://mud-kage.kakaocdn.net/dn/qw8lR/bIcxYaakfob/guHX26MP2edYIJ0HkMMN2K/img.jpg?convert=resize2&w=320&h=320',
+        name: 'name',
+        price: 17000,
+        dDay: 3,
+        isLike: false,
+      },
+    ];
+    return cards.map((card, i) => <CardEntry card={card} />);
   }
 }

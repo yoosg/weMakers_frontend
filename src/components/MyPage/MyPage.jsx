@@ -1,35 +1,35 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
 import sty from '../MyPage/MyPage.module.scss';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Card from './CardEntry';
+import { NavLink } from 'react-router-dom';
+import Card from '../MyPage/Card';
+import '../../common/reset.scss';
 
 export default class MyPage extends Component {
   render() {
+    console.log(this.props)
     return (
       <div className={sty.myPage}>
         <Header />
-        <div className={sty.navLikedAndOrderWrap}>
+        <div className={sty.myPageConatiner}>
           <ul className={sty.navLikedAndOrder}>
-            <li className={sty.like}>좋아요</li>
-            <li className={sty.order}>주문 및 배송 내역</li>
+            <li className={sty.like}>
+              <NavLink to="/mypage/like">좋아요</NavLink>
+            </li>
+            <li className={sty.order}>
+              <NavLink to="/mypage/order">주문 및 배송 내역</NavLink>
+            </li>
           </ul>
         </div>
         <div className={sty.container}>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          </div>
+          {this.props.location.pathname === '/mypage/like' ? (
+            <Card />
+          ) : (
+            // order
+            <></>
+          )}
         </div>
+      </div>
     );
   }
 }
