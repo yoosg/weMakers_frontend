@@ -10,13 +10,22 @@ export default class Card extends Component {
     };
   }
 
-  getCardData() {
-    // fetch logic
-  }
+  // getCardData() {
+  //   // fetch logic
+  //   fetch('', {
+  //     method: 'GET',
+  //   },
+  //   body: JSON.stringify({
+  //     id: this.state.cards
+  //   })
+  //   )
+  //   .then()
+  //   .then()
+  // }
 
-  componentDidMount() {
-    this.getCardData();
-  }
+  // componentDidMount() {
+  //   this.getCardData();
+  // }
 
   render() {
     const cards = [
@@ -36,7 +45,7 @@ export default class Card extends Component {
         name: 'name',
         price: 17000,
         dDay: 3,
-        isLike: false,
+        isLike: true,
       },
     ];
     return cards.map((card, i) => <CardEntry card={card} />);
