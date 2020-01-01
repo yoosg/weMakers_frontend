@@ -24,8 +24,8 @@ export default class App extends Component {
           <SideDrawer show={sideMenu} switchToggle={this.switchToggle} />
           <Header switchToggle={this.switchToggle} />
           <div className={sty.appContentLayout}>
-            {/* <Home /> */}
-            <Artist />
+            <Home />
+            {/* <Artist /> */}
           </div>
           <Footer />
         </div>

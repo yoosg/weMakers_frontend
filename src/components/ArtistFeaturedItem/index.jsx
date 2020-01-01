@@ -1,5 +1,6 @@
 import React from "react";
 import sty from "./index.module.scss";
+import LikeButton from "../../atoms/LikeButton";
 export default function ArtistFeaturedItem() {
   return (
     <div className={sty.item}>
@@ -20,12 +21,10 @@ export default function ArtistFeaturedItem() {
       <div className={sty.itemLike}>
         <div className={sty.itemLikeWrap}>
           <div className={sty.itemLikeComp}>
-            <button type="button" className={sty.item1LikeBtn}>
-              <span className={sty.icoProduct}>좋아요</span>
-              <span className={sty.likeText}>
-                <span className={sty.emphasize}>135</span>명
-              </span>
-            </button>
+            <LikeButton />
+            <span className={sty.likeText}>
+              <span className={sty.emphasize}>135</span>명
+            </span>
           </div>
         </div>
       </div>
