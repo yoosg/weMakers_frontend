@@ -2,21 +2,26 @@
   height: 40px;
   list-style: none;
   border-bottom: 1px solid #fefefe;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .tabNameWrapper {
   width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 2px auto 0 auto;
   text-align: center;
   padding: 8px 2px 6px;
 }
 .tabNameBorder {
+  width: 85%;
   border-bottom: 5px solid #212121;
 }
 .tabName {
   position: relative;
+  color: #212121;
+}
+.tabNameBold {
+  font-weight: bold;
 }
 .tabDot {
   position: absolute;

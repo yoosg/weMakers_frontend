@@ -1,0 +1,214 @@
+{
+  "goods": [
+    {
+      "id": "151234",
+      "title": "파우치를 화장대처럼",
+      "desc": "누워있던 메이크업 파우치를 세웠을 뿐인데 일상은 몇 배 더 편해집니다. 세워놓아도 쓰러지지 않고, 수납공간이 다양해 원하는 제품을 한 번에 찾을 수 있습니다.",
+      "orders": "1842",
+      "like": false,
+      "likeCount": 1567,
+      "date": "2020-01-04 23:59:59",
+      "image": "https://mud-kage.kakaocdn.net/dn/bljmEW/bIctV2HosSl/dNf2fk35IkZa8GuCyharv1/img.jpg?convert=crop&w=640&h=450"
+    },
+    {
+      "id": "17123",
+      "title": "모발 밀림 없는 미용 가위",
+      "desc": "헤어 커트용 가위는 날이 중요합니다. 60년 장인이 일반 가위보다 100배 날카롭게 날을 다듬었습니다. 스크류 홀로 장력을 조절할 수 있고 양날은 분리돼 세척과 관리도 쉽습니다. 커트용과 틴닝용이 있습니다.",
+      "orders": "1842",
+      "like": false,
+      "likeCount": 1200,
+      "date": "2020-01-04 23:59:59",
+      "image": "https://mud-kage.kakaocdn.net/dn/r1gza/bIcxYcZ7exy/2CJKYqcXcvBWyyJlvgenQ0/img.jpg?convert=crop&w=640&h=450"
+    },
+    {
+      "id": "18123",
+      "title": "오가닉 식물성 글리세린",
+      "desc": "USDA 인증 순수 식물성 글리세린입니다. 물기가 남아있는 피부에 바르거나 다른 화장품과 섞어 사용하면 보습력이 배가 됩니다. 보습과 피부결 보호, 진정 효과로 겨울철 건조하고 갈라지는 피부에 효과적입니다.",
+      "orders": "1670",
+      "like": false,
+      "likeCount": 1412,
+      "date": "2020-01-04 23:59:59",
+      "image": "https://mud-kage.kakaocdn.net/dn/pUPAp/bIcxYf3IKoH/S44zY8BMdOVRTpD96Dgm01/img.jpg?convert=crop&w=640&h=450"
+    },
+    {
+      "id": "4424",
+      "title": "4 in 1 밸런스 휠",
+      "desc": "인체 골격과 근육을 연구해 제작한 33cm 높이의 운동기구입니다. 다리와 전신 스트레칭부터 등, 어깨, 허리 근육을 강화에 활용합니다. 땀을 흘려도 미끄럽지 않은 코르크 재질로 만들었습니다.",
+      "orders": "501",
+      "like": false,
+      "likeCount": 1302,
+      "date": "2020-01-04 23:59:59",
+      "image": "https://mud-kage.kakaocdn.net/dn/pUPAp/bIcxYf3IKoH/S44zY8BMdOVRTpD96Dgm01/img.jpg?convert=crop&w=640&h=450"
+    },
+    {
+      "id": "5152",
+      "title": "마음까지 녹일 한 잔",
+      "desc": "물이나 인스턴트 과일 주스는 빼고, 생과일과 유기농 사탕수수, 제철 생강을 넣어 만드는 뱅쇼. 따뜻하게 데워 마시면 몸과 마음이 스르륵 녹는 기분입니다.",
+      "orders": "637",
+      "like": false,
+      "likeCount": 1892,
+      "date": "2020-01-04 23:59:59",
+      "image": "https://mud-kage.kakaocdn.net/dn/shMXi/bIcqtXP9Fwy/GSFFoYujusMbhhCIK8Ok70/img.jpg?convert=crop&w=640&h=450"
+    },
+    {
+      "id": "6",
+      "title": "발효 원료 97% 앰플",
+      "desc": "누룩 장인들의 매끄러운 피부 비결로 꼽히는 발효 효모 갈락토미세스 97%에 천연 유래 성분과 미백 주름 기능성 원료만을 더했습니다. 피부 본연의 힘을 키워 맑고 투명한 피부로 가꾸는 데 도움을 줍니다.",
+      "orders": "1090",
+      "like": false,
+      "likeCount": 987,
+      "date": "2020-01-04 23:59:59",
+      "image": "https://mud-kage.kakaocdn.net/dn/0Kcpe/bIcxYaOOsYo/qfP6KVRkvPgePL16MRZeZ0/img.jpg?convert=crop&w=640&h=450"
+    },
+    {
+      "id": "71235",
+      "title": "자석 구둣주걱",
+      "desc": "보관을 위해 따로 못을 박거나 고리를 만들 필요 없이 현관문이나 철제 가구에 붙일 수 있도록 자석을 넣어 제작했습니다. 강력한 자력으로 잘 떨어지지 않고 알록달록해 바쁜 순간에도 한눈에 들어옵니다.",
+      "orders": "2643",
+      "like": false,
+      "likeCount": 789,
+      "date": "2020-01-04 23:59:59",
+      "image": "https://mud-kage.kakaocdn.net/dn/bnmxrw/bIcxYfpaoc4/5qPrQbglsZYrEuiKABKUmK/img.jpg?convert=crop&w=640&h=450%22"
+    },
+    {
+      "id": "81235",
+      "title": "360도 회전 거치대",
+      "desc": "두 개의 회전 볼이 있어 원하는 각도로 회전됩니다. 강력한 자력으로 흔들림 없이 고정되고 탈부착도 쉽습니다. 자동차 실내뿐만 아니라 싱크대, 화장대 등 다양한 곳에 설치합니다. 메이커스에서만 4가지 컬러를 선보입니다.",
+      "orders": "354",
+      "like": false,
+      "likeCount": 8544,
+      "date": "2020-01-04 23:59:59",
+      "image": "https://mud-kage.kakaocdn.net/dn/c9scCO/bIcxYb76kC7/kLcLSMWrcbTGAISPfQcX10/img.jpg?convert=crop&w=640&h=450"
+    }
+  ],
+  "steadySeller": {
+    "mdTitle": "1만 이상 고객이 선택한 스테디셀러",
+    "list": [
+      {
+        "id": "100",
+        "title": "피톤치드 가득한 편백잎수액",
+        "orders": "429",
+        "like": false,
+        "likeCount": "972",
+        "image": "https://mud-kage.kakaocdn.net/dn/eduwlD/bIcvGq7x8Vf/EbHbKQTfmJNdaWS67c0OZK/img.jpg?convert=crop&w=336&h=336"
+      },
+      {
+        "id": "101",
+        "title": "라운드랩 1025 독도 크림 2개",
+        "orders": "549",
+        "like": false,
+        "likeCount": "503",
+        "image": "https://mud-kage.kakaocdn.net/dn/eduwlD/bIcvGq7x8Vf/EbHbKQTfmJNdaWS67c0OZK/img.jpg?convert=crop&w=336&h=336"
+      },
+      {
+        "id": "102",
+        "title": "투스홀 화이트 미백치약 2개 (미니칫솔 2개 증정)",
+        "orders": "503",
+        "like": false,
+        "likeCount": "1240",
+        "image": "https://mud-kage.kakaocdn.net/dn/eduwlD/bIcvGq7x8Vf/EbHbKQTfmJNdaWS67c0OZK/img.jpg?convert=crop&w=336&h=336"
+      },
+      {
+        "id": "103",
+        "title": "2019 업그레이드 아임세이프 / 퓨어 무기자차 100% 선크림",
+        "orders": "339",
+        "like": false,
+        "likeCount": "506",
+        "image": "https://mud-kage.kakaocdn.net/dn/eduwlD/bIcvGq7x8Vf/EbHbKQTfmJNdaWS67c0OZK/img.jpg?convert=crop&w=336&h=336"
+      }
+    ]
+  },
+  "present": {
+    "mdTitle": "다가온 연말, 감사함을 선물하세요",
+    "list": [
+      {
+        "id": "200",
+        "title": "타민하우스 코엔자임Q10 3박스 + 1박스 (건강기능식품)",
+        "orders": "107",
+        "likes": "447",
+        "like": false,
+        "likeCount": "234",
+        "image": "https://mud-kage.kakaocdn.net/dn/BsFdV/bIcxX66Micl/iDBojht7Ia8p6HSe591cyK/img.jpg?convert=crop&w=336&h=336"
+      },
+      {
+        "id": "201",
+        "title": "100인의 배우, 세계 문학을 읽다 1편",
+        "orders": "342",
+        "likes": "941",
+        "like": false,
+        "likeCount": "563",
+        "image": "https://mud-kage.kakaocdn.net/dn/BsFdV/bIcxX66Micl/iDBojht7Ia8p6HSe591cyK/img.jpg?convert=crop&w=336&h=336"
+      },
+      {
+        "id": "202",
+        "title": "[아르떼알파카] 100% 베이비 알파카 숄",
+        "orders": "12",
+        "likes": "230",
+        "like": false,
+        "likeCount": "358",
+        "image": "https://mud-kage.kakaocdn.net/dn/BsFdV/bIcxX66Micl/iDBojht7Ia8p6HSe591cyK/img.jpg?convert=crop&w=336&h=336"
+      },
+      {
+        "id": "203",
+        "title": "이브이 콕콕 마사지기",
+        "orders": "115",
+        "likes": "511",
+        "like": false,
+        "likeCount": "289",
+        "image": "https://mud-kage.kakaocdn.net/dn/BsFdV/bIcxX66Micl/iDBojht7Ia8p6HSe591cyK/img.jpg?convert=crop&w=336&h=336"
+      }
+    ]
+  },
+  "household": {
+    "mdTitle": "살림 고수들 사이에서 입소문 난 아이템",
+    "list": [
+      {
+        "id": "300",
+        "title": "세탁용 이염방지 시트_5팩(125매)",
+        "orders": "297",
+        "like": false,
+        "likeCount": "187",
+        "image": "https://mud-kage.kakaocdn.net/dn/bfH98J/bIcxYfo9JMM/9sAeQQQNQ0EsAkIW7iDMbk/img.jpg?convert=crop&w=336&h=336"
+      },
+      {
+        "id": "301",
+        "title": "하우닉 핸디형 무선청소기",
+        "orders": "63",
+        "like": false,
+        "likeCount": "237",
+        "image": "https://mud-kage.kakaocdn.net/dn/mwSGk/bIcxX7SbPqV/cdqeBW4eLJpsqqAPAXNXXK/img.jpg?convert=crop&w=336&h=336"
+      },
+      {
+        "id": "302",
+        "title": "오엘라 네오스핀 욕실 무선 청소기",
+        "orders": "158",
+        "like": false,
+        "likeCount": "311",
+        "image": "https://mud-kage.kakaocdn.net/dn/FjDyU/bIcvGqGABIw/n7MaDXFlKJgeaPJHwBnv80/img.jpg?convert=crop&w=336&h=336"
+      },
+      {
+        "id": "303",
+        "title": "윙핏 스탠드형 스팀다리미",
+        "orders": "31",
+        "like": false,
+        "likeCount": "83",
+        "image": "https://mud-kage.kakaocdn.net/dn/Cb4Jf/bIcxYddNZN5/mWnrZFQYT9mzBoHXjvBt7k/img.jpg?convert=crop&w=336&h=336"
+      }
+    ]
+  },
+  "orderClosed": {
+    "mdTitle": "주문마감",
+    "list": [
+      {
+        "id": "400",
+        "title": "타민하우스 코엔자임Q10 3박스 + 1박스 (건강기능식품)",
+        "image": "https://mud-kage.kakaocdn.net/dn/BsFdV/bIcxX66Micl/iDBojht7Ia8p6HSe591cyK/img.jpg?convert=crop&w=336&h=336"
+      },
+      {
+        "id": "401",
+        "title": "타민하우스 코엔자임Q10 3박스 + 1박스 (건강기능식품)",
+        "image": "https://mud-kage.kakaocdn.net/dn/BsFdV/bIcxX66Micl/iDBojht7Ia8p6HSe591cyK/img.jpg?convert=crop&w=336&h=336"
+      }
+    ]
+  }
+}

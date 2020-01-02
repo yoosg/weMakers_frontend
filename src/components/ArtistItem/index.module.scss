@@ -1,0 +1,64 @@
+.wrapArtistItem {
+  position: relative;
+  width: 100%;
+}
+.artistItemImg {
+  width: 99.9%;
+  height: 100%;
+  cursor: pointer;
+}
+.itemBtn {
+  position: absolute;
+  display: inline-block;
+  z-index: 10;
+  bottom: 60px;
+  right: 28px;
+}
+.itemBtnLiked {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 12px 32px 0 rgba(149, 149, 149, 0.5);
+}
+.itemBtnLikedCount {
+  padding-top: 12px;
+  margin: 8px 2px 0;
+  display: block;
+}
+.itemBtnImg {
+}
+.wrapArtistItemInfo {
+  padding: 8px 12px;
+}
+.artistItemTag {
+  display: block;
+  font-size: 12px;
+  color: #b1b1b1;
+  letter-spacing: 0;
+}
+.artistItemTitle {
+  display: block;
+  margin-right: 27%;
+  font-size: 18px;
+  color: #5a5a5a;
+  font-weight: bold;
+  padding-top: 6px;
+  letter-spacing: 0;
+}
+.artistItemType {
+  display: block;
+  margin-top: 12px;
+  font-weight: 300;
+  font-size: 12px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  letter-spacing: 0.5;
+}
+.artistItemMakers {
+  color: #7a7a7a;
+  font-weight: bold;
+}

@@ -1,27 +1,12 @@
-import React, { Component } from "react";
-import "./common/reset.scss";
-import sty from "./App.module.scss";
-import Header from "./components/Header/Header";
-import SideDrawer from "./pages/SideDrawer";
+import React from "react";
+import Layout from "./Layout";
+import Home from "./pages/Home";
+import Artist from "./pages/Artist";
 
-export default class App extends Component {
-  state = {
-    sideMenu: false
-  };
-  switchToggle = () => {
-    this.setState(prevState => {
-      return { sideMenu: !prevState.sideMenu };
-    });
-  };
-  render() {
-    const { sideMenu } = this.state;
-    return (
-      <div className={sty.app}>
-        <SideDrawer show={sideMenu} switchToggle={this.switchToggle} />
-        <div>
-          <Header switchToggle={this.switchToggle} />
-        </div>
-      </div>
-    );
-  }
+export default function App() {
+  return (
+    <Layout>
+      <Home />
+    </Layout>
+  );
 }
