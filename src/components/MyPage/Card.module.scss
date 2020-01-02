@@ -7,22 +7,6 @@
 .button {
   display: none;
 }
-.likeBtn {
-  display: inline-block;
-  border: 0 none;
-  width: 30px;
-  height: 25px;
-  background-color: transparent;
-  background-image: url('../../assets/icon/sprite-min.png');
-  background-position: 0 0;
-  background-size: 30px;
-  top: 1px;
-  left: 1px;
-  cursor: pointer;
-}
-.checked {
-  background-position: 0 -27px;
-}
 
 .container {
   display: inline;
@@ -46,21 +30,4 @@
 }
 .button {
   display: none;
-}
-.likeBtn {
-  display: inline-block;
-  border: 0 none;
-  width: 30px;
-  height: 25px;
-  background-color: transparent;
-  background-image: url('../../assets/icon/sprite-min.png');
-  background-position: 0 0;
-  background-size: 30px;
-  top: 1px;
-  left: 1px;
-  cursor: pointer;
-}
-
-.empty {
-  background-position: 0 -27px;
 }

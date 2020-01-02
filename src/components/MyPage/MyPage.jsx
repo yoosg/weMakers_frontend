@@ -15,7 +15,7 @@ export default class MyPage extends Component {
         <div className={sty.myPageConatiner}>
           <ul className={sty.navLikedAndOrder}>
             <li className={sty.like}>
-              <NavLink to="/mypage/like">좋아요</NavLink>
+              <NavLink to="/mypage/like">좋아요</NavLink> //링크
             </li>
             <div className={sty.bar}>
             </div>

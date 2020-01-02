@@ -5,14 +5,8 @@ import Info from './Info';
 import '../../common/reset.scss';
 
 export default class CardEntry extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-  }
   render() {
-    const { card } = this.props; //둘러 쌓으면 됨
+    const { card } = this.props;
     return (
       <div className={sty.container}>
         <li className={sty.lists}>
@@ -21,7 +15,7 @@ export default class CardEntry extends Component {
             className={sty.itemImg}
             src={card.src}
           ></img>
-          <span className={`${sty.likeBtn} ${this.props.isLike ? '': sty.empty}`}></span>
+          <span className={`${sty.likeBtn} ${card.isLike ? '': sty.empty}`}></span>
           <Info />
         </li>
       </div>

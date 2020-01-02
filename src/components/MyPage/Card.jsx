@@ -15,12 +15,11 @@ export default class Card extends Component {
   //   fetch('', {
   //     method: 'GET',
   //   },
-  //   body: JSON.stringify({
-  //     id: this.state.cards
+  //   body: JSON.stringify( {
   //   })
   //   )
-  //   .then()
-  //   .then()
+  //   .then(res=>)
+  //   .then(res)
   // }
 
   // componentDidMount() {
@@ -45,9 +44,9 @@ export default class Card extends Component {
         name: 'name',
         price: 17000,
         dDay: 3,
-        isLike: true,
+        isLike: false,
       },
     ];
-    return cards.map((card, i) => <CardEntry card={card} />);
+    return cards.map((card, i) => <CardEntry card={card} />); //카드로 내려줄꺼
   }
 }
