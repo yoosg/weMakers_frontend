@@ -1,24 +1,26 @@
 import React, { Component } from "react";
 import ProductReviewElement from "./ProductReviewElement";
 import fetchAPI from "../../../utils/fetch.js";
-import reviewData from "./ProductReviewData";
+import data from "./ProductReviewData";
 import sty from "./ProductReview.module.scss";
 
 export default class ProductReview extends Component {
   state = {
-    data: []
+    data: [],
+    reviewData: data
   };
-  componentDidMount() {
+  /*  componentDidMount() {
     fetchAPI("http://localhost:3000/data/ProductReview.json").then(res => {
       this.setState({
         data: res
       });
     });
   }
-
+ */
   render() {
-    if (!this.state.data.reviewData || !this.state.data.reviewTotal)
-      return <></>;
+    /* if (!this.state.data.reviewData || !this.state.data.reviewTotal)
+      return <></>; */
+    console.log(this.state.reviewData);
 
     const { reviewData } = this.state.reviewData;
     const {

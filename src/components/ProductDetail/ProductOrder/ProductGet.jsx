@@ -10,9 +10,26 @@ export default class ProductGet extends Component {
   }
 
   plusHandler = () => {
+    /* const { getCount, totalPrice } = this.state; */
     /* this.props.totalPrice(this.props.data.price * (this.state.getCount + 1)); */
     this.setState({
       getCount: this.state.getCount + 1
+      /* ,
+      () => {
+        let flag = true;
+        for (let i = 0; i < totalPrice.length; i++) {
+          if (totalPrice[i].id === data.id) {
+            flag = false;
+            totalPrice[i].price = data.price * getCount;
+          }
+        }
+        if (flag === false) {
+          totalPrice.push({
+            id: data.id,
+            price: data.price * getCount
+          });
+        }
+      } */
     });
   };
   minusHandler = () => {

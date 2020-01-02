@@ -16,7 +16,7 @@ export default class ProductInformation extends Component {
       likeBtn: false,
       link: false,
       list: [
-        { id: 0, name: "블러셔", stock: 254, price: 179090 },
+        { id: 0, name: "블러셔", stock: 254, price: 17900 },
         { id: 1, name: "브릭", stock: 1, price: 17900 },
         { id: 2, name: "차콜", stock: 250, price: 17900 },
         { id: 3, name: "베이지", stock: 262, price: 17900 },
@@ -72,7 +72,7 @@ export default class ProductInformation extends Component {
     const likeLink = this.state.likeBtn
       ? null
       : "https://makers.kakao.com/like?makersapp_title=%EC%A2%8B%EC%95%84%EC%9A%94";
-
+    console.log("infomation : ", this.state.getList);
     return (
       <div className={sty.mainContainer}>
         <Header />

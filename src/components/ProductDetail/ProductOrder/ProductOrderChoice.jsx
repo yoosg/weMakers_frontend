@@ -91,7 +91,7 @@ class ProductOrderChoice extends Component {
                         <span>(배송비 : 2,500원)</span>
                       </span>
                       <strong className={sty.totalMoney}>
-                        {this.state.total}원
+                        {this.state.total}
                       </strong>
                     </div>
                   </div>
