@@ -12,7 +12,7 @@ export default class Card extends Component {
         name:{},
         price:{},
         end_date:{},
-        isLike:true
+        isLike: true
       }],
     };
   }
@@ -60,7 +60,7 @@ export default class Card extends Component {
         name: 'name',
         price: 17000,
         dDay: 3,
-        isLike: false,
+        isLike: true,
       },
     ];
     return cards.map((card, i) => <CardEntry card={card} />); //카드로 내려줄꺼
