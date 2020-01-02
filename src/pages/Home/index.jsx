@@ -42,7 +42,7 @@ export default class Home extends Component {
         if (index === allArray.length - 1)
           return (
             <ProdCard2
-              key={steadySeller.mdTitle}
+              key={"key1"}
               mdList={steadySeller}
               marginTopVal={32}
               scrollToTag={mdSelectList[0]}
@@ -51,7 +51,7 @@ export default class Home extends Component {
         if (index === allArray.length - 6)
           return (
             <ProdCard2
-              key={present.mdTitle}
+              key={"key3"}
               mdList={present}
               marginTopVal={32}
               scrollToTag={mdSelectList[1]}
@@ -60,7 +60,7 @@ export default class Home extends Component {
         if (index === allArray.length - 2)
           return (
             <ProdCard2
-              key={household.mdTitle}
+              key={"key2"}
               mdList={household}
               marginTopVal={32}
               scrollToTag={mdSelectList[2]}
