@@ -79,6 +79,7 @@ export default class Home extends Component {
         return (
           <ProdCard1
             key={id}
+            id={id}
             title={title}
             desc={desc}
             orders={orders}
