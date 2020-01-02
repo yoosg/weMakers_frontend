@@ -158,7 +158,7 @@ export default class SignUp extends Component {
       .then(res => {
         console.log('가입성공 데이터', res);
         alert('success');
-      });
+      }); 
   }
 
   render() {
