@@ -16,7 +16,7 @@ export default class ProductInformation extends Component {
       likeBtn: false,
       link: false,
       list: [
-        { id: 0, name: "블러셔", stock: 254, price: 17900 },
+        { id: 0, name: "블러셔", stock: 254, price: 179090 },
         { id: 1, name: "브릭", stock: 1, price: 17900 },
         { id: 2, name: "차콜", stock: 250, price: 17900 },
         { id: 3, name: "베이지", stock: 262, price: 17900 },
@@ -77,7 +77,7 @@ export default class ProductInformation extends Component {
       <div className={sty.mainContainer}>
         <Header />
         <ProductArticle linkBox={this.linkHandler} />
-        <button className={sty.upBtn} />
+        <a href='#root' className={sty.upBtn} />
         <div className={sty.orderBtnContainer}>
           <a
             href={likeLink}

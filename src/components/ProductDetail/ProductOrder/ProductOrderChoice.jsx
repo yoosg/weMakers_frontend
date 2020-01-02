@@ -6,8 +6,8 @@ import sty from "./ProductOrderChoice.module.scss";
 class ProductOrderChoice extends Component {
   constructor(props) {
     super(props);
-    /* this.messagesEnd = React.createRef();
-    this.scrollToBottom = this.scrollToBottom.bind(this); */
+    /* this.messagesEnd = React.createRef(); */
+    this.scrollToBottom = this.scrollToBottom.bind(this);
   }
 
   state = {
@@ -20,17 +20,21 @@ class ProductOrderChoice extends Component {
       total: target
     });
   };
- /*  scrollToBottom = () => {
-    this.messagesEnd.current.scrollIntoView({ behavior: "smooth" });
+  scrollToBottom = () => {
+    this.messagesEnd.scrollIntoView({ behavior: "smooth" });
   };
 
   componentDidMount() {
-    this.scrollToBottom();
+    /* this.scrollToBottom(); */
+    console.log(this.messagesEnd);
   }
 
-  componentDidUpdate() {
-    this.scrollToBottom();
-  } */
+  componentDidUpdate(prevProps) {
+    console.log(this.props.getList.length > 3);
+    if (prevProps.getList.length !== this.props.getList.length) {
+      this.props.getList.length > 2 && this.scrollToBottom();
+    }
+  }
   /* gotoBottom = idx => {
     var element = document.getElementsByClassName(“sw-commentS-body”)[idx];
     element.scrollTop = element.scrollHeight - element.clientHeight;
@@ -75,9 +79,9 @@ class ProductOrderChoice extends Component {
                         {list}
                         <div
                           style={{ float: "left", clear: "both" }}
-                           /* ref={el => {
+                          ref={el => {
                             this.messagesEnd = el;
-                          } } */
+                          }}
                         ></div>
                       </ul>
                     </div>
