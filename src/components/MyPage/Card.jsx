@@ -1,35 +1,46 @@
 import React, { Component } from 'react';
 import '../MyPage/Card.module.scss';
 import CardEntry from './CardEntry';
-import {fetchApi} from '../../utils/fetchAPI'
+//import {fetchAPI} from '../../utils/fetchAPI'
 export default class Card extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     cards: [{
-  //       id: 
-  //     }],
-  //   };
-  // }
-componentDidMount() {
-  
-}
+  constructor(props) {
+    super(props);
+    this.state = {
+      cards: [{
+        id:{},
+        src:{},
+        name:{},
+        price:{},
+        end_date:{},
+        isLike:true
+      }],
+    };
+  }
 
-  // getCardData() {
-  //   // fetch logic
-  //   fetch('', {
-  //     method: 'GET',
-  //   },
-  //   body: JSON.stringify( {
-  //   })
-  //   )
-  //   .then(res=>)
-  //   .then(res)
-  // }
+  getCardData() {
+    // fetch logic
+    fetch('http://localhost:3000/data/myPageData.json', {
+      method: 'GET',
+    },
+    )
+    .then(res=>{
+      this.setState({
+        id: res.id,
+        src: res.src,
+        name: res.name,
+        price: res.price,
+        end_date: res.end_date,
+        isLike: res.isLike
+      })
+    })
+    .catch(err => {
+      console.log(err);
+    })
+  }
 
-  // componentDidMount() {
-  //   this.getCardData();
-  // }
+  componentDidMount() {
+    this.getCardData();
+  }
 
   render() {
     const cards = [
