@@ -60,7 +60,7 @@ class Login extends Component {
   //서버 api
   sendLoginData = () => {
     console.log("fetch지금되고있음");
-    fetch("http://10.58.3.61:8001/user/auth", {
+    fetch("http://10.58.7.150:8001/user/auth", {
       method: "POST",
       body: JSON.stringify({
         email: this.state.email,
