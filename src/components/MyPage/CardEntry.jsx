@@ -5,16 +5,25 @@ import Info from './Info';
 import '../../common/reset.scss';
 
 export default class CardEntry extends Component {
+  state = {
+    isLike: this.props.card.isLike,
+  };
+  handleIsLike = () => {
+    console.log('like', this.state.isLike);
+    this.setState({
+      isLike: !this.state.isLike,
+    });
+  };
   render() {
-    const { card, handleIsLike } = this.props;
+    const { card } = this.props;
+    const { isLike } = this.state;
     return (
       <div className={sty.container}>
         <li className={sty.lists}>
-          <a className={sty.like} />
           <img className={sty.itemImg} src={card.src}></img>
           <span
-            className={card.isLike ? sty.likeBtn : sty.empty}
-            onClick={handleIsLike}
+            className={`${sty.likeBtn} ${isLike ? '': sty.empty}`}
+            onClick={this.handleIsLike}
           ></span>
           <Info />
         </li>

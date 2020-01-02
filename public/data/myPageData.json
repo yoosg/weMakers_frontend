@@ -50,12 +50,11 @@
     },
     {
       "id": "7",
-      "src": "https://mud-kage.kakaocdn.net/dn/bw7v9S/bIcj3lJQVba/kySoJK79aYSPRWhSV6KEAK/img.jpg?convert=resize2&w=320&h=320",
-      "name": "물 넣지 않은 배도라지즙 1박스",
-      "price": "20000",
+      "src": "https://mud-kage.kakaocdn.net/dn/fUXPS/bIcqtY9mkvO/9DW8eXitGptoGg4uGLsLY1/img.jpg?convert=resize2&w=320&h=320",
+      "name": "메디힐리 아이온팩 25매 세트",
+      "price": "27500",
       "end_date": "8",
       "isLike": "true"
-    },
-    
+    }
   ]
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import sty from '../MyPage/Info.module.scss';
 
 export default class Info extends Component {
+
   render() {
     return (
       <div className={sty.wrap}>
