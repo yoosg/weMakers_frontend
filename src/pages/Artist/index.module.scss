@@ -1,0 +1,40 @@
+.artistWrap {
+  width: 100%;
+  padding-top: 104px;
+}
+.artistWrapPadding {
+  padding: 36px 15px 24px 15px;
+}
+
+.metaRight {
+  float: left;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.rowArtistList {
+  margin-top: 34px;
+  padding-bottom: 4px;
+  border: 0.5px solid gray;
+}
+
+.makersXartistWrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  // padding-top: 20%;
+  border: 1px solid red;
+  margin-top: 96px;
+}
+.makersXartist {
+  position: relative;
+  display: block;
+  margin-top: 96px;
+}
+.find {
+  display: block;
+  width: 100%;
+  height: auto;
+}

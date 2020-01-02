@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 div,
@@ -76,16 +80,14 @@ video {
   background: transparent;
   font-weight: normal;
   letter-spacing: 1px;
-}
-​ * {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
   color: inherit;
-}
-​ *:focus {
-  outline: none;
-  border: none;
+  :focus {
+    outline: none;
+    border: none;
+  }
 }
 ​ body {
   line-height: 1;
@@ -102,6 +104,14 @@ menu,
 nav,
 section {
   display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  :focus {
+    outline: none;
+    border: none;
+  }
 }
 ​ nav ul {
   list-style: none;
@@ -114,7 +124,7 @@ q {
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 ​ a {

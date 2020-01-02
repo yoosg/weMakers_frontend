@@ -1,0 +1,30 @@
+.prodLikes {
+  position: relative;
+  display: inline-block;
+  padding: 4px 4px;
+  border: 0;
+}
+.likeIcon {
+  position: absolute;
+  top: -8px;
+  left: -12px;
+  display: inline-block;
+  width: 32px;
+  height: 160px;
+  background-size: cover;
+  background-position: 0px -112px;
+  background-repeat: no-repeat;
+}
+.likeIconTrue {
+  background-position: 0 0px;
+}
+.sideBackDrop {
+  z-index: 1900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 200%;
+  background-color: rgba(0, 0, 0, 0.3);
+}

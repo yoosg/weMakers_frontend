@@ -1,0 +1,17 @@
+.optionElement {
+  border-bottom: 1px solid #e5e5e5;
+  list-style: none;
+}
+.optionBox {
+  overflow-x: hidden;
+  display: table-cell;
+  height: 45px;
+  padding: 0 25px;
+  font-size: 14px;
+  color: #3d3d3d;
+  vertical-align: middle;
+  .optionName {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+  }
+}

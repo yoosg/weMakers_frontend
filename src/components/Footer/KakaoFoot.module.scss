@@ -1,0 +1,48 @@
+.footerInfoWrap {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px 14px 100px;
+  font-family: sans-serif;
+  background-color: #fff;
+  clear: both;
+}
+.textLogo {
+  float: left;
+  font-size: 11px;
+  color: #888;
+  clear: both;
+}
+.textLogoLink {
+  display: block;
+  color: #888;
+}
+.imgText {
+  display: block;
+  width: 38px;
+  height: 15px;
+  background: url("../../assets/img_txt_m320.png") no-repeat;
+  background-position: -260px -200px;
+  overflow: hidden;
+
+  font-size: 1px;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.listInfo {
+  overflow: hidden;
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+}
+.info {
+  float: left;
+  padding: 0 1px 0 16px;
+}
+.infoLink {
+  display: block;
+  text-decoration: none;
+  font-size: 10px;
+  color: #a3a3a3;
+  letter-spacing: -1px;
+  vertical-align: top;
+}

@@ -3,7 +3,7 @@ import sty from "./index.module.scss";
 export default function SideMenu({ menuList }) {
   const rowMenu = menuList.map(item => {
     return (
-      <span class={sty.rowLink}>
+      <span className={sty.rowLink} key={item}>
         <li className={sty.row}>{item}</li>
       </span>
     );

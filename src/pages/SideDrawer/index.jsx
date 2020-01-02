@@ -1,8 +1,9 @@
 //SideDrawer
 import React from "react";
-import sty from "./SideDrawer.module.scss";
+import sty from "./index.module.scss";
 import SideMenu from "../../components/SideMenu";
 import SideProfile from "../../components/SideProfile";
+import PlusFriendLayer from "../../components/HomePlusFriendLayer";
 const menuList1 = [
   "주문 배송 내역",
   "후기 내역",
