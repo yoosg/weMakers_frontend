@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import '../MyPage/Card.module.scss';
 import CardEntry from './CardEntry';
-
+import {fetchApi} from '../../utils/fetchAPI'
 export default class Card extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      cards: [],
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     cards: [{
+  //       id: 
+  //     }],
+  //   };
+  // }
+componentDidMount() {
+  
+}
 
   // getCardData() {
   //   // fetch logic
