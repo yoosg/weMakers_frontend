@@ -5,6 +5,9 @@
   height: 48px;
   line-height: 44px;
   text-align: center;
+  * {
+    box-sizing: content-box;
+  }
 }
 .productinfo {
   display: block;
@@ -28,6 +31,6 @@
   color: #db635d;
   span {
     border-bottom: 3px solid #db635d;
-    height: 88%;
+    height: 85%;
   }
 }

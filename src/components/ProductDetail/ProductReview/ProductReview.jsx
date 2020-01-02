@@ -1,32 +1,32 @@
 import React, { Component } from "react";
 import ProductReviewElement from "./ProductReviewElement";
-import fetchAPI from "../../../Utils/fetch";
+import data from "./ProductReviewData";
 import sty from "./ProductReview.module.scss";
 
 export default class ProductReview extends Component {
   state = {
-    data: []
+    reviewData: data
   };
-  componentDidMount() {
+  /*  componentDidMount() {
     fetchAPI("http://localhost:3000/data/ProductReview.json").then(res => {
       this.setState({
         data: res
       });
     });
-  }
+  } */
 
   render() {
-    if (!this.state.data.reviewData || !this.state.data.reviewTotal)
-      return <></>;
-    console.log(this.state.data);
-    const { reviewData } = this.state.data;
+    /* if (!this.state.data.reviewData || !this.state.data.reviewTotal)
+      return <></>; */
+
+    const { reviewData } = this.state.reviewData;
     const {
       total,
       fourStar,
       threeStar,
       twoStar,
       oneStar
-    } = this.state.data.reviewTotal;
+    } = this.state.reviewData.reviewTotal;
 
     const myStyle1 = {
       width: Math.round((fourStar / total) * 100) + "%"
@@ -66,7 +66,7 @@ export default class ProductReview extends Component {
                 <span className={sty.evaluate}>매우 만족해요</span>
                 <span className={sty.bgBar}>
                   <span
-                    className={`${sty.innerBar} ${sty.inner1}`}
+                    className={`${sty.innerBar} ${sty.inner1} ${sty.stretchRight}`}
                     style={myStyle1}
                   ></span>
                 </span>
@@ -81,7 +81,7 @@ export default class ProductReview extends Component {
                 <span className={sty.evaluate}>만족해요</span>
                 <span className={sty.bgBar}>
                   <span
-                    className={`${sty.innerBar} ${sty.inner2}`}
+                    className={`${sty.innerBar} ${sty.inner2} ${sty.stretchRight}`}
                     style={myStyle2}
                   ></span>
                 </span>
@@ -96,7 +96,7 @@ export default class ProductReview extends Component {
                 <span className={sty.evaluate}>아쉬워요</span>
                 <span className={sty.bgBar}>
                   <span
-                    className={`${sty.innerBar} ${sty.inner3}`}
+                    className={`${sty.innerBar} ${sty.inner3} ${sty.stretchRight}`}
                     style={myStyle3}
                   ></span>
                 </span>
@@ -105,7 +105,9 @@ export default class ProductReview extends Component {
             </dl>
             <dl className={sty.graphElement}>
               <dt className={sty.satisfyScoreBox}>
-                <span className={`${sty.satisfyScore} ${sty.score4}`}></span>
+                <span
+                  className={`${sty.satisfyScore} ${sty.score4} ${sty.stretchRight}`}
+                ></span>
               </dt>
               <dd>
                 <span className={sty.evaluate}>매우 아쉬워요</span>

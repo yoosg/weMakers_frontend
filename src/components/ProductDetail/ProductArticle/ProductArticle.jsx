@@ -37,7 +37,6 @@ export default class ProductArticle extends Component {
 
   render() {
     const { linkBox } = this.props;
-    console.log(this.props.linkBox);
     const list = toggleData.map((data, index) => (
       <InformationList
         key={index}

@@ -1,0 +1,160 @@
+.getList {
+  position: relative;
+  overflow: hidden;
+  width: 93%;
+  padding: 12px 43px 12px 0;
+  border-top: 1px solid #d7d7d7;
+  display: block;
+  strong {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #3d3d3d;
+  }
+  .getCount {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 118px;
+    height: 35px;
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    .minusBtn {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 35px;
+      height: 33px;
+      border-right: 1px solid #e1e1e1;
+      font-size: 0;
+      line-height: 0;
+      border: 0 none;
+      background-color: transparent;
+      cursor: pointer;
+      outline: none;
+      span {
+        display: inline-block;
+        width: 14px;
+        height: 2px;
+        background-image: url("../../../assets/icon/ico_makers_v2_m320.png");
+        background-position: -220px -560px;
+        background-repeat: no-repeat no-repeat;
+        vertical-align: middle;
+        overflow: hidden;
+      }
+    }
+    .getNumber {
+      display: block;
+      width: 44px;
+      height: 33px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 33px;
+    }
+    .plusBtn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 35px;
+      height: 33px;
+      border-left: 1px solid #e1e1e1;
+      font-size: 0;
+      line-height: 0;
+      border: 0 none;
+      background-color: transparent;
+      cursor: pointer;
+      outline: none;
+      span {
+        display: inline-block;
+        width: 14px;
+        height: 13px;
+        background-image: url("../../../assets/icon/ico_makers_v2_m320.png");
+        background-position: -220px -540px;
+        background-repeat: no-repeat no-repeat;
+        vertical-align: middle;
+        overflow: hidden;
+      }
+    }
+  }
+  .getPrice {
+    float: right;
+    margin-top: 6px;
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: -1px;
+    color: #3d3d3d;
+  }
+  .deleteBtn {
+    position: absolute;
+    bottom: 8px;
+    right: -4px;
+    padding: 5px;
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    span {
+      display: block;
+      width: 35px;
+      height: 35px;
+      background-image: url("../../../assets/icon/ico_makers_v2_m320.png");
+      background-position: -50px -610px;
+      overflow: hidden;
+    }
+  }
+}
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+  visibility: visible !important;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(-8%);
+  }
+  65% {
+    transform: translateY(4%);
+  }
+  80% {
+    transform: translateY(-4%);
+  }
+  95% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+  50% {
+    -webkit-transform: translateY(-8%);
+  }
+  65% {
+    -webkit-transform: translateY(4%);
+  }
+  80% {
+    -webkit-transform: translateY(-4%);
+  }
+  95% {
+    -webkit-transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}

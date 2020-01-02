@@ -3,7 +3,6 @@
   max-width: 640px;
   background: #fff;
   margin: 0 auto;
-
   padding-top: 55px;
   /* border: 1px solid lightseagreen; */
 }
@@ -53,7 +52,6 @@
 }
 .orderBtnContainer {
   float: left;
-  width: 72%;
   height: 65px;
   font-weight: bold;
   font-size: 16px;
@@ -74,4 +72,19 @@
 }
 .likeTxt {
   color: #c99694;
+}
+.upBtn {
+  position: fixed;
+  bottom: 77px;
+  right: 100px;
+  z-index: 3;
+  border: none;
+  outline: none;
+  background-image: url("../../assets/icon/ico_makers_v2_m320.png");
+  background-position: -60px -720px;
+  background-color: transparent;
+  width: 54px;
+  height: 54px;
+
+  cursor: pointer;
 }
