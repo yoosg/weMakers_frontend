@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import sty from "./MdProdContent.module.scss";
-import testImg from "../../assets/mockUpImgs/thumb_img.jpg";
 import ProductOrdersStatus from "../../atoms/ProductOrdersStatus";
 import ProductLikeButton from "../../atoms/ProductLikeButton";
 
 export default function MdProdContent({
+  id,
   title,
   orders,
   like,
@@ -16,21 +17,24 @@ export default function MdProdContent({
   return (
     <>
       <li className={sty.mdProdContent}>
-        <div
+        <Link
+          to={`/detail/:${id}`}
           className={sty.mdProdPic}
           style={{ backgroundImage: `url(${image})` }}
-        ></div>
+        ></Link>
         <div className={sty.mdProdInfoWrap}>
           <div className={sty.mdProdInfo}>
-            <span className={sty.prodOrders}>
-              <strong className={sty.prodTitle}>{title}</strong>
-              <ProductOrdersStatus
-                text={"주문 중"}
-                fontSizeVal={12}
-                orders={orders}
-                reBuyNoti={reBuyNoti}
-              />
-            </span>
+            <Link to={`/detail/:${id}`}>
+              <span className={sty.prodOrders}>
+                <strong className={sty.prodTitle}>{title}</strong>
+                <ProductOrdersStatus
+                  text={"주문 중"}
+                  fontSizeVal={12}
+                  orders={orders}
+                  reBuyNoti={reBuyNoti}
+                />
+              </span>
+            </Link>
             <ProductLikeButton
               key={title}
               marginTopVal={marginTopVal}

@@ -2,6 +2,7 @@ import React from "react";
 import sty from "./index.module.scss";
 import MdProdHeader from "./MdProdHeader";
 import MdProdContent from "./MdProdContent";
+import { Link } from "react-scroll";
 
 export default function HomeProdCard2({
   mdList,
@@ -13,6 +14,7 @@ export default function HomeProdCard2({
     return (
       <MdProdContent
         key={x.id}
+        id={x.id}
         title={x.title}
         orders={x.orders}
         like={x.like}
