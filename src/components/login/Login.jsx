@@ -11,20 +11,18 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isHelpTooltipOn: false, //저함수 원래값을 false로 해놓음
-      email: "",
-      password: "",
-      isValidate: false
+      isHelpTooltipOn: false,
+      email: '',
+      password: '',
+      isValidate: false,
     };
     this.clickHelp = this.clickHelp.bind(this);
-    this.closeHelpTooltip = this.closeHelpTooltip.bind(this); //함수마다 해줘야됨
+    this.closeHelpTooltip = this.closeHelpTooltip.bind(this);
     this.checkValidation = this.checkValidation.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange = e => {
-    //console.log(e.target.name.password);
     this.setState({ [e.target.name]: e.target.value });
-    //console.log('1', e.target.name, '2', e.target.name.email, e.target.value);
   };
 
   clickHelp() {
@@ -59,9 +57,15 @@ class Login extends Component {
   }
   //서버 api
   sendLoginData = () => {
+<<<<<<< HEAD
+    console.log('fetch 실행중');
+    fetch('http://10.58.1.149:8001/user/auth', {
+      method: 'POST',
+=======
     console.log("fetch지금되고있음");
     fetch("http://10.58.7.150:8001/user/auth", {
       method: "POST",
+>>>>>>> master
       body: JSON.stringify({
         email: this.state.email,
         password: this.state.password
@@ -69,9 +73,13 @@ class Login extends Component {
     })
       .then(res => res.json())
       .then(res => {
+<<<<<<< HEAD
+        localStorage.setItem('auth_token', res.access_token);
+=======
         console.log("res", res);
         alert(res.access_token);
         localStorage.setItem("auth_token", res.access_token);
+>>>>>>> master
       });
   };
 
@@ -105,10 +113,3 @@ class Login extends Component {
 }
 export default Login;
 
-{
-  /* <div className={sty.errorAlert}>
-  <p className={sty.error}>
-이메일형식 또는 비밀번호가 올바르지 않습니다.
-  </p>
-</div> */
-}
