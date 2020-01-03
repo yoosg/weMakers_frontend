@@ -14,15 +14,15 @@ function routes() {
   return (
     <Router>
       <Switch>
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={SignUp} />
-        <Route exact path="/detail" component={ProductInformation} />
-        <Route exact path="/artist" component={Artist} />
-        <Route exact path="/new" component={Test1} />
-        <Route exact path="/open" component={Test2} />
-        <Route exact path="/my" component={Test3} />
-        <Route path="/detail/:id" component={ProductInformation} />
-        <Route path="/" component={App} />
+        <Route path='/login' component={Login} />
+        <Route path='/signup' component={SignUp} />
+        <Route exact path='/detail' component={ProductInformation} />
+        <Route exact path='/artist' component={Artist} />
+        <Route exact path='/new' component={Test1} />
+        <Route exact path='/open' component={Test2} />
+        <Route exact path='/my' component={Test3} />
+        <Route path='/detail/:id' component={ProductInformation} />
+        <Route path='/' component={App} />
       </Switch>
     </Router>
   );

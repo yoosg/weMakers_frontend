@@ -5,20 +5,69 @@
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
 }
 .choiceBox {
   border-top: 3px solid #262626;
   position: fixed;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  bottom: 40%;
+  left: 41%;
   width: 278px;
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 5;
 }
 .optionList {
   overflow-y: scroll;
   max-height: 206px;
   background-color: #fff;
   list-style: none;
+}
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
 }

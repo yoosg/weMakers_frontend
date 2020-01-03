@@ -1,40 +1,73 @@
-.modalOverlay {
-  &.Modal-anim-enter {
-    opacity: 0;
-    transition: all 10s;
+.modal {
+  padding: 0 0 12px 10px;
+  border-top: 3px solid #262626;
+  position: fixed;
+  bottom: 0;
+  width: 640px;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  transition-timing-function: ease;
+  z-index: 3;
+
+  * {
+    box-sizing: content-box;
   }
-  &.Modal-anim-enter.Modal-anim-enter-active {
-    opacity: 1;
+}
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
   }
-  &.Modal-anim-leave {
-    opacity: 1;
-    transition: all 10s;
+  50% {
+    transform: translateY(-8%);
   }
-  &.Modal-anim-leave.Modal-anim-leave-active {
-    opacity: 0;
+  65% {
+    transform: translateY(4%);
+  }
+  80% {
+    transform: translateY(-4%);
+  }
+  95% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }
 
-.modal {
-  &.Modal-anim-enter {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.7);
-    transition: all 5s;
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(100%);
   }
-  &.Modal-anim-enter.Modal-anim-enter-active {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+  50% {
+    -webkit-transform: translateY(-8%);
   }
-  &.Modal-anim-leave {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    transition: all 5s;
+  65% {
+    -webkit-transform: translateY(4%);
   }
-  &.Modal-anim-leave.Modal-anim-leave-active {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(2.9);
+  80% {
+    -webkit-transform: translateY(-4%);
+  }
+  95% {
+    -webkit-transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
   }
 }
+
 .modalOverlay {
   position: fixed;
   top: 0;
@@ -43,20 +76,9 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   transition-timing-function: ease;
+  z-index: 2;
 }
 
-.modal {
-  padding: 0 0 12px 10px;
-  border-top: 3px solid #262626;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 640px;
-  background-color: #fff;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  transition-timing-function: ease;
-}
 .selectTab {
   fieldset {
     border: 0 none;
@@ -121,6 +143,9 @@
   padding: 12px 1px 32px;
   .totalList {
     padding-right: 9px;
+    max-height: 154px;
+    overflow-x: hidden;
+    overflow-y: auto;
     ul {
       margin-top: -13px;
     }
@@ -169,6 +194,7 @@
     border: none;
     background-color: transparent;
     outline: none;
+    box-sizing: border-box;
     span {
       width: 100%;
       margin-right: 3px;
@@ -187,6 +213,7 @@
     border: none;
     background-color: transparent;
     outline: none;
+    box-sizing: border-box;
     span {
       width: 100%;
       margin-left: 2px;

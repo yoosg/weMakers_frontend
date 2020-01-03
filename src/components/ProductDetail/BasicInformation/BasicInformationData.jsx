@@ -1,18 +1,23 @@
 const basicData = {
   basicInfo: [
-    { title: "품명 및 모델명", content: "153 ID 스페셜 에디션 키워드 펜" },
-    { title: "상품구성", content: "유성볼펜 (1.0mm), 리필심 (0.7mm)" },
-    { title: "상품옵션", content: "LOVE, DREAM, HAPPY, PEACE 중 택 1" },
-    { title: "사이즈 (중량 포함)", content: "149.6mm (18.09g)" },
-    { title: "소재", content: "황동, 알루미늄, 스테인레스 스틸" },
-    { title: "제조연월일", content: "2020년 1월" },
     {
+      id: 0,
+      title: "품명 및 모델명",
+      content: "153 ID 스페셜 에디션 키워드 펜"
+    },
+    { id: 1, title: "상품구성", content: "유성볼펜 (1.0mm), 리필심 (0.7mm)" },
+    { id: 2, title: "상품옵션", content: "LOVE, DREAM, HAPPY, PEACE 중 택 1" },
+    { id: 3, title: "사이즈 (중량 포함)", content: "149.6mm (18.09g)" },
+    { id: 4, title: "소재", content: "황동, 알루미늄, 스테인레스 스틸" },
+    { id: 5, title: "제조연월일", content: "2020년 1월" },
+    {
+      id: 6,
       title: "품질보증기준",
       content:
         "유성볼펜의 품질 보증 기간은 내부 기준으로 36개월(은색빅볼, 겔잉크 별도)이나, 보증기간과 A/S 가능 기간은 다름을 알려드립니다."
     },
-    { title: "제조자", content: "(주)모나미" },
-    { title: "제조국", content: "한국" }
+    { id: 7, title: "제조자", content: "(주)모나미" },
+    { id: 8, title: "제조국", content: "한국" }
   ],
   reference: [
     {

@@ -1,7 +1,25 @@
 import React, { Component } from "react";
 import sty from "./ProductContent.module.scss";
 export default class ProductContent extends Component {
+  state = {
+    maxOrder: 4740,
+    minOrder: 1,
+    orderCount: 133
+  };
   render() {
+    const initialValue =
+      Math.round((this.state.orderCount / this.state.maxOrder) * 100) < 70
+        ? this.state.orderCount >= 1
+          ? 30
+          : 0
+        : 0;
+
+    const graphStyle = {
+      width:
+        Math.round((this.state.orderCount / this.state.maxOrder) * 100) +
+        initialValue +
+        "%"
+    };
     return (
       <div className={sty.orderCountBox}>
         <div className={sty.countInfo}>
@@ -9,7 +27,7 @@ export default class ProductContent extends Component {
           <div className={sty.orderGraph}>
             <span className={sty.orderText}>133명 주문중</span>
             <div className={sty.graph}>
-              <div className={sty.sellLine}></div>
+              <div className={sty.sellLine} style={graphStyle}></div>
               <div className={sty.maxPoint}>
                 <span className={sty.max}></span>
                 <span className={sty.count}>4,740</span>

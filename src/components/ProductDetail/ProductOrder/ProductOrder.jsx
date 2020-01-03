@@ -4,16 +4,20 @@ import sty from "./ProductOrder.module.scss";
 
 class ProductOrder extends Component {
   render() {
-    const { listView, choice, choiceList } = this.props;
+    const { listView, choice, choiceList, selectList } = this.props;
     return (
       <React.Fragment>
         {listView ? (
           <React.Fragment>
             <div className={sty.choiceList} onClick={choice} />
-            <div className={sty.choiceBox}>
+            <div className={`${sty.choiceBox} ${sty.fadeIn}`}>
               <ul className={sty.optionList}>
                 {choiceList.map(element => (
-                  <ProductOption key={element.id} listData={element} />
+                  <ProductOption
+                    key={element.id}
+                    listData={element}
+                    selectList={selectList}
+                  />
                 ))}
               </ul>
             </div>
