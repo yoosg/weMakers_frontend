@@ -1,0 +1,29 @@
+.mdProdContent {
+  width: auto;
+  // margin-top: 0;
+  border-bottom: 1px solid #dedede;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+}
+
+.mdProdPic {
+  position: relative;
+  display: inline-block;
+  width: 28%;
+  height: 170px;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+}
+.mdProdInfoWrap {
+  position: relative;
+  display: inline-block;
+  width: 72%;
+}
+.mdProdInfo {
+  margin-top: 28px;
+  margin-left: 23px;
+}
+.prodTitle {
+  color: #212121;
+}

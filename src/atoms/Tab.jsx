@@ -1,15 +1,17 @@
-import React, { memo } from "react";
 import sty from "./Tab.module.scss";
+import { Link } from "react-router-dom";
+import React, { memo } from "react";
 
-export default memo(function Tab({ tabName, tabLen, active, changeTabActive }) {
+export default memo(function Tab({ tabName, link, tabLen, active }) {
   return (
     <li className={sty.tab} style={{ width: `${100 / tabLen}%` }}>
-      <div
-        className={`${sty.tabNameWrapper} ${active && sty.tabNameBorder}`}
-        onClick={changeTabActive(tabName)}
-      >
-        <span className={sty.tabName}>{tabName}</span>
-      </div>
+      <Link to={link}>
+        <div className={`${sty.tabNameWrapper} ${active && sty.tabNameBorder}`}>
+          <span className={`${sty.tabName} ${active && sty.tabNameBold}`}>
+            {tabName}
+          </span>
+        </div>
+      </Link>
     </li>
   );
 });

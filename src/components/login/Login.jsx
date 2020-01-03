@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import sty from './Login.module.scss';
-import LoginFooter from '../loginFooter/LoginFooter';
-import LoginButton from './LoginButton';
-import LoginSet from './LoginSet';
-import LoginBelowButtons from './LoginBelowButtons';
-import LoginValidation from './LoginValidation';
-import LoginInput from './LoginInput';
+import React, { Component } from "react";
+import sty from "./Login.module.scss";
+import LoginFooter from "../loginFooter/LoginFooter";
+import LoginButton from "./LoginButton";
+import LoginSet from "./LoginSet";
+import LoginBelowButtons from "./LoginBelowButtons";
+import LoginValidation from "./LoginValidation";
+import LoginInput from "./LoginInput";
 
 class Login extends Component {
   constructor(props) {
@@ -27,25 +27,25 @@ class Login extends Component {
 
   clickHelp() {
     this.setState({
-      isHelpTooltipOn: !this.state.isHelpTooltipOn,
+      isHelpTooltipOn: !this.state.isHelpTooltipOn
     });
   }
 
   closeHelpTooltip(e) {
-    if (e.target.name !== 'tooltip') {
+    if (e.target.name !== "tooltip") {
       this.setState({
-        isHelpTooltipOn: false,
+        isHelpTooltipOn: false
       });
     }
   }
 
   checkValidation() {
     if (
-      this.state.email === '' ||
+      this.state.email === "" ||
       !/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i.test(
         this.state.email
       ) ||
-      this.state.password === '' ||
+      this.state.password === "" ||
       !/^[a-zA-Z0-9]{8,32}$/.test(this.state.password)
     ) {
       this.setState({ isValidate: true });
@@ -57,17 +57,29 @@ class Login extends Component {
   }
   //서버 api
   sendLoginData = () => {
+<<<<<<< HEAD
     console.log('fetch 실행중');
     fetch('http://10.58.1.149:8001/user/auth', {
       method: 'POST',
+=======
+    console.log("fetch지금되고있음");
+    fetch("http://10.58.7.150:8001/user/auth", {
+      method: "POST",
+>>>>>>> master
       body: JSON.stringify({
         email: this.state.email,
-        password: this.state.password,
-      }),
+        password: this.state.password
+      })
     })
       .then(res => res.json())
       .then(res => {
+<<<<<<< HEAD
         localStorage.setItem('auth_token', res.access_token);
+=======
+        console.log("res", res);
+        alert(res.access_token);
+        localStorage.setItem("auth_token", res.access_token);
+>>>>>>> master
       });
   };
 

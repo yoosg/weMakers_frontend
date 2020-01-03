@@ -1,0 +1,84 @@
+.sideBackDrop {
+  display: block;
+  z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+.plusFriendWrap {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: 17%;
+  text-align: center;
+  z-index: 9999;
+  width: 100%;
+  max-width: 340px;
+}
+.plusFriendLayer {
+  padding: 33px 18px 20px;
+  background-color: #fff;
+}
+.h1 {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #000;
+}
+.desc {
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 21px;
+  color: #000;
+}
+.link {
+  padding-left: 10px;
+  position: relative;
+  margin-bottom: 16px;
+  display: block;
+  height: 45px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 45px;
+  color: #000;
+  border-radius: 23px;
+  background-color: #fed800;
+  text-align: center;
+}
+.icon {
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  left: 50px;
+  width: 25px;
+  height: 30px;
+  background-image: url(../../assets/icon/ico_makers_v2_320.png);
+  background-position: 0 72px;
+}
+
+.desc2 {
+  font-size: 11px;
+  line-height: 16px;
+  color: #a9a9a9;
+  margin-top: 12px;
+}
+.xBtn {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 10px;
+  right: 12px;
+  overflow: hidden;
+  background-image: url(../../assets/icon/ico_makers_v2_320.png);
+  background-position: 62px -58px;
+  font-size: 1px;
+  line-height: 0;
+  text-indent: -9999px;
+}

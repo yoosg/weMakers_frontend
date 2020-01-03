@@ -128,7 +128,7 @@ export default class ProductReview extends Component {
             </div>
           </div>
         </div>
-        <a href='https://makers.kakao.com/my/review?menu=wait'>
+        <a href="https://makers.kakao.com/my/review?menu=wait">
           <span className={sty.writeLink}>
             구매후기는 <span className={sty.point}>후기내역</span>에서 작성하실
             수 있습니다.
