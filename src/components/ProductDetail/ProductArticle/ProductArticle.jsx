@@ -18,6 +18,14 @@ const toggleData = [
   { title: "구매후기", id: 3 },
   { title: "제품문의", id: 4 }
 ];
+const basicInfo = {
+  id: 0,
+  name: "153 ID 스페셜 에디션 키워드 펜",
+  price: "21,900",
+  endDate: 8,
+  orderCount: 133,
+  shippingStart: "1월 3주경(17일)"
+};
 const tabContent = {
   1: <DetailInformation />,
   2: <BasicInformation />,
@@ -52,9 +60,9 @@ export default class ProductArticle extends Component {
         <ProductTopImage />
         <div className={sty.titBox}>
           <a href={"localhost:3000/detail"} className={sty.titName}>
-            153 ID 스페셜 에디션 키워드 펜
+            {basicInfo.name}
           </a>
-          <span className={sty.titPrice}>21,900원</span>
+          <span className={sty.titPrice}>{basicInfo.price}원</span>
 
           <a className={sty.linkBtn} onClick={linkBox}>
             <span className={sty.linkImg}></span>
@@ -66,8 +74,7 @@ export default class ProductArticle extends Component {
           <p className={sty.shippingText}>
             지금 주문하시면
             <em className={sty.shippingTextDetail}>
-              {" "}
-              1월 3주경(17일) 배송시작
+              {basicInfo.shippingStart} 배송시작
             </em>
             예정
           </p>

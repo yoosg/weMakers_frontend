@@ -22,7 +22,6 @@ export default class BasicInformation extends Component {
           </ul>
         </div>
         <div className={sty.oftenQuestion}>
-          <h3>자주하는질문</h3>
           <div className={sty.questionList}></div>
         </div>
       </div>
