@@ -10,6 +10,7 @@ export default class CardEntry extends Component {
   };
   handleIsLike = () => {
     console.log('like', this.state.isLike);
+    console.log('card', this.props)
     this.setState({
       isLike: !this.state.isLike,
     });
@@ -25,7 +26,7 @@ export default class CardEntry extends Component {
             className={`${sty.likeBtn} ${isLike ? '': sty.empty}`}
             onClick={this.handleIsLike}
           ></span>
-          <Info />
+          <Info card = {card} />
         </li>
       </div>
     );

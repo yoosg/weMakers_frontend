@@ -1,15 +1,22 @@
 .wrap {
+  display: inline-block;
   padding: 10px;
   font-size: 12px;
   cursor: pointer;
 }
 
 .itemName {
+  display: block;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
 }
-.orderStatus{
+
+.orderStatus {
   margin-top: 3px;
-  color: #DB635D;
+  color: #db635d;
   font-weight: bold;
 }
 //주문하기 버튼

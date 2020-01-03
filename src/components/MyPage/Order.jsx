@@ -1,18 +1,31 @@
-import React, { Component } from 'react'
-import sty from './Order.module.scss'
+import React, { Component } from 'react';
+import sty from './Order.module.scss';
+import OrderFooter from './OrderFooter';
+import { fetchAPI } from '../../utils/fetchAPI';
+import OrderEntry from './OrderEntry';
 
 export default class Order extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+    };
+  }
+
+  componentDidMount() {
+    fetchAPI('http://localhost:3000/data/myPageData.json').then(res => {
+      this.setState({
+        data: res.data,
+      });
+    });
+  }
   render() {
+    const { data } = this.state;
     return (
-      <div className={sty.orderLists}>
-        <div className={sty.wrap}>
-          <img className={sty.img}
-          src ="https://mud-kage.kakaocdn.net/dn/qw8lR/bIcxYaakfob/guHX26MP2edYIJ0HkMMN2K/img.jpg?convert=resize2&w=320&h=320" ></img>
-          <div className={sty.status}>배송중</div>
-          <div className={sty.title}>상품이름</div>
-        </div>
-        {/*footer*/}
+      <div className={sty.order}>
+    {data.map((card, i) => (<OrderEntry card={card}/>))}
+        <OrderFooter />
       </div>
-    )
+    );
   }
 }

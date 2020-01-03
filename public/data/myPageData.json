@@ -6,7 +6,8 @@
       "name": "[인바이트엘] 스탠딩 메이크업 백인백",
       "price": "17000",
       "end_date": "2",
-      "isLike": "true"
+      "isLike": "true",
+      "status": "배송중"
     },
     {
       "id": "2",
@@ -14,7 +15,8 @@
       "name": "라운드랩 1025 독도 크림 2개",
       "price": "29800",
       "end_date": "3",
-      "isLike": "true"
+      "isLike": "true",
+      "status": "주문완료"
     },
     {
       "id": "3",
@@ -22,7 +24,8 @@
       "name": "153 ID 스페셜 에디션 키워드 펜",
       "price": "21900",
       "end_date": "9",
-      "isLike": "true"
+      "isLike": "true",
+      "status": "배송중"
     },
     {
       "id": "4",
@@ -30,7 +33,8 @@
       "name": "강원도 4년근 약더덕청 - 오리지널, 생강",
       "price": "49800",
       "end_date": "5",
-      "isLike": "true"
+      "isLike": "true",
+      "status": "배송완료"
     },
     {
       "id": "5",
@@ -38,7 +42,8 @@
       "name": "물 넣지 않은 배도라지즙 1박스",
       "price": "20000",
       "end_date": "8",
-      "isLike": "true"
+      "isLike": "true",
+      "status": "배송중"
     },
     {
       "id": "6",
@@ -46,7 +51,8 @@
       "name": "[로가디스]오토매틱 여성용 가죽 시계",
       "price": "89000",
       "end_date": "4",
-      "isLike": "true"
+      "isLike": "true",
+      "status": "배송완료"
     },
     {
       "id": "7",
@@ -54,7 +60,8 @@
       "name": "메디힐리 아이온팩 25매 세트",
       "price": "27500",
       "end_date": "8",
-      "isLike": "true"
+      "isLike": "true",
+      "status": "배송중"
     }
   ]
 }

@@ -8,7 +8,6 @@ export default class Card extends Component {
     super(props);
     this.state = {
       data: [],
-
     };
   }
 
@@ -21,11 +20,10 @@ export default class Card extends Component {
       });
     });
   }
-
   render() {
     const { data } = this.state;
     return data.map((card, i) => (
       <CardEntry card={card} handleIsLike={this.handleIsLike} />
     ));
-  } //카드로 내려줄꺼 여기서 왜 i 를쓸까? 사용되지도않는데..
+  } 
 }

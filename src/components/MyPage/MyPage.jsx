@@ -6,6 +6,7 @@ import Card from '../MyPage/Card';
 import '../../common/reset.scss';
 import Order from './Order';
 
+
 export default class MyPage extends Component {
   render() {
     console.log(this.props)
