@@ -8,7 +8,7 @@ export default class LinkPage extends Component {
         {linkOpen ? (
           <React.Fragment>
             <div className={sty.linkModal} onClick={linkBox} />
-            <div className={sty.linkPageContainer}>
+            <div className={`${sty.linkPageContainer} ${sty.fadeIn}`}>
               <div className={sty.linkPageBox}>
                 <div className={sty.linkUrl}>
                   <ul className={sty.urlList}>

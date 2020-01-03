@@ -1,5 +1,8 @@
 .orderCountBox {
   padding: 20px 12px 0;
+  * {
+    box-sizing: content-box;
+  }
 }
 .countInfo {
   border-bottom: 1px solid #f1f1f1;

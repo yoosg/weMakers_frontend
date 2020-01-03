@@ -22,7 +22,8 @@ export default class ProductInformation extends Component {
         { id: 3, name: "베이지", stock: 262, price: 17900 },
         { id: 4, name: "포루리", stock: 232, price: 17900 },
         { id: 5, name: "블랙", stock: 304, price: 17900 }
-      ]
+      ],
+      getList: []
     };
   }
   firstModalHandler = () => {
@@ -45,15 +46,38 @@ export default class ProductInformation extends Component {
       link: !this.state.link
     });
   };
+  selectListHandler = target => {
+    let set = true;
+    this.state.getList.forEach(element => {
+      if (element.name === target) {
+        set = false;
+      }
+    });
+    if (set) {
+      const get = this.state.list.filter(element => element.name === target);
+      this.setState({
+        getList: this.state.getList.concat(get),
+        choiceList: !this.state.choiceList
+      });
+    }
+  };
+  orderDeleteHandler = target => {
+    const del = this.state.getList.filter(element => element.name !== target);
+    this.setState({
+      getList: del
+    });
+  };
+
   render() {
     const likeLink = this.state.likeBtn
       ? null
       : "https://makers.kakao.com/like?makersapp_title=%EC%A2%8B%EC%95%84%EC%9A%94";
-
+    console.log("infomation : ", this.state.getList);
     return (
       <div className={sty.mainContainer}>
         <Header />
         <ProductArticle linkBox={this.linkHandler} />
+        <a href='#root' className={sty.upBtn} />
         <div className={sty.orderBtnContainer}>
           <a
             href={likeLink}
@@ -74,12 +98,15 @@ export default class ProductInformation extends Component {
           isOpen={this.state.isShowing}
           close={this.firstModalHandler}
           choice={this.secondModalHandler}
+          getList={this.state.getList}
+          deleteBtn={this.orderDeleteHandler}
         />
 
         <ProductOrder
           listView={this.state.choiceList}
           choice={this.secondModalHandler}
           choiceList={this.state.list}
+          selectList={this.selectListHandler}
         />
         <LinkPage linkOpen={this.state.link} linkBox={this.linkHandler} />
       </div>

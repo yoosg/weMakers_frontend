@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
-import ProductReviewElement from './ProductReviewElement';
-import fetchAPI from '../../../utils/fetch';
-import sty from './ProductReview.module.scss';
+
+import React, { Component } from "react";
+import ProductReviewElement from "./ProductReviewElement";
+import fetchAPI from "../../../utils/fetch.js";
+import data from "./ProductReviewData";
+import sty from "./ProductReview.module.scss";
 
 export default class ProductReview extends Component {
   state = {
@@ -9,24 +11,22 @@ export default class ProductReview extends Component {
   };
   componentDidMount() {
     fetchAPI('http://localhost:3000/data/ProductReview.json').then(res => {
-      this.setState({
-        data: res,
-      });
-    });
-  }
-
+    reviewData: data
+  };
+ 
   render() {
-    if (!this.state.data.reviewData || !this.state.data.reviewTotal)
-      return <></>;
-    console.log(this.state.data);
-    const { reviewData } = this.state.data;
+    /* if (!this.state.data.reviewData || !this.state.data.reviewTotal)
+      return <></>; */
+    console.log(this.state.reviewData);
+
+    const { reviewData } = this.state.reviewData;
     const {
       total,
       fourStar,
       threeStar,
       twoStar,
-      oneStar,
-    } = this.state.data.reviewTotal;
+      oneStar
+    } = this.state.reviewData.reviewTotal;
 
     const myStyle1 = {
       width: Math.round((fourStar / total) * 100) + '%',
@@ -66,7 +66,7 @@ export default class ProductReview extends Component {
                 <span className={sty.evaluate}>매우 만족해요</span>
                 <span className={sty.bgBar}>
                   <span
-                    className={`${sty.innerBar} ${sty.inner1}`}
+                    className={`${sty.innerBar} ${sty.inner1} ${sty.stretchRight}`}
                     style={myStyle1}
                   ></span>
                 </span>
@@ -81,7 +81,7 @@ export default class ProductReview extends Component {
                 <span className={sty.evaluate}>만족해요</span>
                 <span className={sty.bgBar}>
                   <span
-                    className={`${sty.innerBar} ${sty.inner2}`}
+                    className={`${sty.innerBar} ${sty.inner2} ${sty.stretchRight}`}
                     style={myStyle2}
                   ></span>
                 </span>
@@ -96,7 +96,7 @@ export default class ProductReview extends Component {
                 <span className={sty.evaluate}>아쉬워요</span>
                 <span className={sty.bgBar}>
                   <span
-                    className={`${sty.innerBar} ${sty.inner3}`}
+                    className={`${sty.innerBar} ${sty.inner3} ${sty.stretchRight}`}
                     style={myStyle3}
                   ></span>
                 </span>
@@ -105,7 +105,9 @@ export default class ProductReview extends Component {
             </dl>
             <dl className={sty.graphElement}>
               <dt className={sty.satisfyScoreBox}>
-                <span className={`${sty.satisfyScore} ${sty.score4}`}></span>
+                <span
+                  className={`${sty.satisfyScore} ${sty.score4} ${sty.stretchRight}`}
+                ></span>
               </dt>
               <dd>
                 <span className={sty.evaluate}>매우 아쉬워요</span>
@@ -128,7 +130,7 @@ export default class ProductReview extends Component {
             </div>
           </div>
         </div>
-        <a href="https://makers.kakao.com/my/review?menu=wait">
+        <a href='https://makers.kakao.com/my/review?menu=wait'>
           <span className={sty.writeLink}>
             구매후기는 <span className={sty.point}>후기내역</span>에서 작성하실
             수 있습니다.
