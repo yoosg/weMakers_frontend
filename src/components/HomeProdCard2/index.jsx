@@ -5,6 +5,7 @@ import MdProdContent from "./MdProdContent";
 import { Link } from "react-scroll";
 
 export default function HomeProdCard2({
+  mdTitle,
   mdList,
   reBuyNoti,
   marginTopVal,
@@ -29,7 +30,7 @@ export default function HomeProdCard2({
   return (
     <div className={scrollToTag}>
       <div className={sty.homeProdCardWrap}>
-        <MdProdHeader mdTitle={mdList.mdTitle} />
+        <MdProdHeader mdTitle={mdTitle} />
         <div className={sty.mdProdBody}>
           <ul className={sty.ulWrapper}>
             <div className={sty.mdProdWrapper}>{MdProdList}</div>

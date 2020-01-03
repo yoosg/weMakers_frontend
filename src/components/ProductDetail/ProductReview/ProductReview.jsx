@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import ProductReviewElement from "./ProductReviewElement";
 import fetchAPI from "../../../utils/fetch.js";
@@ -7,38 +6,38 @@ import sty from "./ProductReview.module.scss";
 
 export default class ProductReview extends Component {
   state = {
-    data: [],
+    data: data
   };
   componentDidMount() {
-    fetchAPI('http://localhost:3000/data/ProductReview.json').then(res => {
-    reviewData: data
-  };
- 
+    // fetchAPI('http://localhost:3000/data/ProductReview.json').then(res => {
+    // reviewData: data
+  }
+
   render() {
     /* if (!this.state.data.reviewData || !this.state.data.reviewTotal)
       return <></>; */
-    console.log(this.state.reviewData);
+    // console.log(this.state.reviewData);
 
-    const { reviewData } = this.state.reviewData;
+    const { reviewData } = this.state.data;
     const {
       total,
       fourStar,
       threeStar,
       twoStar,
       oneStar
-    } = this.state.reviewData.reviewTotal;
+    } = this.state.data.reviewTotal;
 
     const myStyle1 = {
-      width: Math.round((fourStar / total) * 100) + '%',
+      width: Math.round((fourStar / total) * 100) + "%"
     };
     const myStyle2 = {
-      width: Math.round((threeStar / total) * 100) + '%',
+      width: Math.round((threeStar / total) * 100) + "%"
     };
     const myStyle3 = {
-      width: Math.round((twoStar / total) * 100) + '%',
+      width: Math.round((twoStar / total) * 100) + "%"
     };
     const myStyle4 = {
-      width: Math.round((oneStar / total) * 100) + '%',
+      width: Math.round((oneStar / total) * 100) + "%"
     };
     const satisfy = Math.round(
       ((Number(fourStar) + Number(threeStar)) / total) * 100
@@ -130,7 +129,7 @@ export default class ProductReview extends Component {
             </div>
           </div>
         </div>
-        <a href='https://makers.kakao.com/my/review?menu=wait'>
+        <a href="https://makers.kakao.com/my/review?menu=wait">
           <span className={sty.writeLink}>
             구매후기는 <span className={sty.point}>후기내역</span>에서 작성하실
             수 있습니다.

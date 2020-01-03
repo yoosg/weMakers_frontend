@@ -11,18 +11,15 @@ export default class Header extends Component {
         </div>
         <div className={sty.toolContainer}>
           <div className={sty.leftToolBox}>
-            <a
-              href='https://makers.kakao.com/#NOJ1293073'
-              className={sty.backBtn}
-            >
+            <a href="/" className={sty.backBtn}>
               <span className={sty.backImg}></span>
             </a>
-            <a href='https://makers.kakao.com/' className={sty.homeBtn}>
+            <a href="/" className={sty.homeBtn}>
               <span className={sty.homeImg}></span>
             </a>
           </div>
           <div className={sty.rightToolBox}>
-            <a href='https://makers.kakao.com/search' className={sty.searchBtn}>
+            <a href="/" className={sty.searchBtn}>
               <span className={sty.searchImg}></span>
             </a>
           </div>
