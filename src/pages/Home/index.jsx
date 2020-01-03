@@ -22,14 +22,7 @@ export default class Home extends Component {
   }
   componentDidMount() {
     // fetchAPI("http://localhost:3000/data/goodsData.json").then(res => {
-    fetchAPI("http://10.58.7.150:8001/product").then(res => {
-      console.log("res", res);
-      console.log("res.goods", res.goods);
-      console.log("res.goods typeof :", typeof res.goods);
-      // console.log("res.goods", res.goods);
-      // this.setState({
-      //   goods: res.goods,
-      // });
+    fetchAPI("http://10.58.7.150:8000/product").then(res => {
       this.setState({
         goods: res.goods,
         present: res.present,
@@ -52,6 +45,7 @@ export default class Home extends Component {
           return (
             <ProdCard2
               key={"key1"}
+              mdTitle={"1만 이상 고객이 선택한 스테디셀러"}
               mdList={steadySeller}
               marginTopVal={32}
               scrollToTag={mdSelectList[0]}
@@ -61,6 +55,7 @@ export default class Home extends Component {
           return (
             <ProdCard2
               key={"key3"}
+              mdTitle={"따뜻한 연말 다같이 선물 나눠요"}
               mdList={present}
               marginTopVal={32}
               scrollToTag={mdSelectList[1]}
@@ -70,6 +65,7 @@ export default class Home extends Component {
           return (
             <ProdCard2
               key={"key2"}
+              mdTitle={"주부들이 선택한 주방용품"}
               mdList={household}
               marginTopVal={32}
               scrollToTag={mdSelectList[2]}

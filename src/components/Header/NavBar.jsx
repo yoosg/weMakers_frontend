@@ -10,7 +10,7 @@ export default withRouter(
         { tabName: "아티스트", link: "artist", active: false },
         { tabName: "신규", link: "new", active: false },
         { tabName: "오픈예정", link: "open", active: false },
-        { tabName: "마이", link: "my", active: false }
+        { tabName: "마이", link: "mylike", active: false }
       ]
     };
     componentDidMount() {

@@ -12,9 +12,9 @@ class Login extends Component {
     super(props);
     this.state = {
       isHelpTooltipOn: false,
-      email: '',
-      password: '',
-      isValidate: false,
+      email: "",
+      password: "",
+      isValidate: false
     };
     this.clickHelp = this.clickHelp.bind(this);
     this.closeHelpTooltip = this.closeHelpTooltip.bind(this);
@@ -57,15 +57,8 @@ class Login extends Component {
   }
   //서버 api
   sendLoginData = () => {
-<<<<<<< HEAD
-    console.log('fetch 실행중');
-    fetch('http://10.58.1.149:8001/user/auth', {
-      method: 'POST',
-=======
-    console.log("fetch지금되고있음");
-    fetch("http://10.58.7.150:8001/user/auth", {
+    fetch("http://10.58.7.150:8000/user/auth", {
       method: "POST",
->>>>>>> master
       body: JSON.stringify({
         email: this.state.email,
         password: this.state.password
@@ -73,13 +66,8 @@ class Login extends Component {
     })
       .then(res => res.json())
       .then(res => {
-<<<<<<< HEAD
-        localStorage.setItem('auth_token', res.access_token);
-=======
-        console.log("res", res);
-        alert(res.access_token);
         localStorage.setItem("auth_token", res.access_token);
->>>>>>> master
+        window.location.href = "/";
       });
   };
 
@@ -112,4 +100,3 @@ class Login extends Component {
   }
 }
 export default Login;
-

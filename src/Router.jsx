@@ -1,4 +1,3 @@
-
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import App from "./App";
@@ -20,10 +19,10 @@ function routes() {
         <Route path="/signup" component={SignUp} />
         <Route exact path="/detail" component={ProductInformation} />
         <Route exact path="/artist" component={Artist} />
-        <Route path="/mypage/like" component={MyPage}/>
-        <Route path="/mypage/order" component={MyPage}/>
-        <Route exact path="/new" component={Test1} />
-        <Route exact path="/open" component={Test2} />
+        <Route exact path="/mylike" component={MyPage} />
+        <Route exact path="/myorder" component={MyPage} />
+        <Route exact path="/new" component={Test3} />
+        <Route exact path="/open" component={Test3} />
         <Route exact path="/my" component={Test3} />
         <Route path="/detail/:id" component={ProductInformation} />
         <Route path="/" component={App} />

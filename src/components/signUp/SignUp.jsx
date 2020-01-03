@@ -142,7 +142,7 @@ export default class SignUp extends Component {
   postSignup() {
     console.log("signup하고있음");
     // 전부통과시 서버로 전송할 데이터 (fetch)
-    fetch("http://10.58.7.150:8001/user", {
+    fetch("http://10.58.7.150:8000/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -156,8 +156,9 @@ export default class SignUp extends Component {
       .then(res => res.json())
       .then(res => {
         console.log("가입성공 데이터", res);
-        alert("success");
       });
+    alert("가입에 성공하셨습니다:)");
+    window.location.href = "/";
   }
   render() {
     return (
