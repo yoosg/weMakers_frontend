@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ProductReviewElement from "./ProductReviewElement";
-import fetchAPI from "../../../Utils/fetch";
+import fetchAPI from "../../../utils/fetch";
 import sty from "./ProductReview.module.scss";
 
 export default class ProductReview extends Component {

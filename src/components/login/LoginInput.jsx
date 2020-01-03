@@ -8,7 +8,6 @@ export default class LoginInput extends Component {
   }
 
   render() {
-    console.log(this.props,'ff') //프롭스는 부모의 스테이트를 화면에 뿌려줄때,부모 스테이트 함수가져올때
     return (
       <>
         <div className={`${sty.kakaoAcount} ${sty.twoInput}`}>
