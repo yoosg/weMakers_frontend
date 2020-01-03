@@ -18,7 +18,6 @@
     "react-scroll": "^1.7.15",
     "react-tooltip": "^3.11.1",
     "react-slick": "^0.25.2",
-    "react-tooltip": "^3.11.1",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
