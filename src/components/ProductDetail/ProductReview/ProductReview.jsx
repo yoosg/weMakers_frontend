@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import ProductReviewElement from "./ProductReviewElement";
 import fetchAPI from "../../../utils/fetch.js";
@@ -7,16 +8,12 @@ import sty from "./ProductReview.module.scss";
 export default class ProductReview extends Component {
   state = {
     data: [],
+  };
+  componentDidMount() {
+    fetchAPI('http://localhost:3000/data/ProductReview.json').then(res => {
     reviewData: data
   };
-  /*  componentDidMount() {
-    fetchAPI("http://localhost:3000/data/ProductReview.json").then(res => {
-      this.setState({
-        data: res
-      });
-    });
-  }
- */
+ 
   render() {
     /* if (!this.state.data.reviewData || !this.state.data.reviewTotal)
       return <></>; */
@@ -32,16 +29,16 @@ export default class ProductReview extends Component {
     } = this.state.reviewData.reviewTotal;
 
     const myStyle1 = {
-      width: Math.round((fourStar / total) * 100) + "%"
+      width: Math.round((fourStar / total) * 100) + '%',
     };
     const myStyle2 = {
-      width: Math.round((threeStar / total) * 100) + "%"
+      width: Math.round((threeStar / total) * 100) + '%',
     };
     const myStyle3 = {
-      width: Math.round((twoStar / total) * 100) + "%"
+      width: Math.round((twoStar / total) * 100) + '%',
     };
     const myStyle4 = {
-      width: Math.round((oneStar / total) * 100) + "%"
+      width: Math.round((oneStar / total) * 100) + '%',
     };
     const satisfy = Math.round(
       ((Number(fourStar) + Number(threeStar)) / total) * 100

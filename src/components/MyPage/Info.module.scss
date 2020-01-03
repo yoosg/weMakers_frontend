@@ -1,0 +1,32 @@
+.wrap {
+  display: inline-block;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.itemName {
+  display: block;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.orderStatus {
+  margin-top: 3px;
+  color: #db635d;
+  font-weight: bold;
+}
+//주문하기 버튼
+.orderBtn {
+  margin-top: 16px;
+  display: inline-block;
+  border: 1px solid #e8e8e8;
+  background-color: white;
+  font-weight: bold;
+  padding: 4px 11px;
+  font-size: 11px;
+  color: #1a1a1a;
+}

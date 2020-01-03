@@ -1,0 +1,64 @@
+.myPage {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.navLikedAndOrder {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #efefef;
+}
+
+//좋아요 , 주문 및 배송 내역
+.myPageConatiner {
+  max-width: 640px;
+  margin: 0 auto;
+  margin-top: 107px;
+}
+
+.navLikedAndOrder {
+  display: flex;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #efefef;
+  height: 40px;
+  text-align: center;
+  font-size: small;
+}
+a:link {
+  color: black
+}
+a:visited{
+  color: black;
+}
+a:active{
+  color: black;
+}
+.like {
+  font-weight: bolder;
+  display: inline-block;
+  width: 50%;
+  float: left;
+  margin: auto;
+}
+.bar {
+  display: inline;
+  border: solid 1px #929292;
+  height: 20px;
+  margin: auto;
+}
+.order {
+  font-weight: bolder;
+  display: inline-block;
+  width: 50%;
+  float: right;
+  margin: auto;
+}
+
+
+
+
+.myPageContainer {
+  max-width: 640px;
+  min-width: 320px;
+  margin-top: 100px;
+}
+
